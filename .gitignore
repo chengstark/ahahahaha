@@ -1,0 +1,4 @@
+*.npy
+*.pt
+*.pth
+*.adibin
