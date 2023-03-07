@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=jupyter
 #SBATCH --time=3-00:00:00
-#SBATCH --mem=128GB
-# SBATCH --gres=gpu:2080rtx:0
+#SBATCH --mem=256GB
+#SBATCH --gres=gpu:1
+#SBATCH --partition=compsci-gpu
 #SBATCH --output=./jupyter_log.log
 
 source /home/users/zg78/_conda/bin/activate

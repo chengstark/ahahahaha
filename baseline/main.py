@@ -12,7 +12,7 @@ import numpy as np
 from tqdm import tqdm
 import argparse
 import random
-from sklearn.metrics import f1_score, accuracy_score
+from sklearn.metrics import f1_score, accuracy_score, roc_auc_score, precision_recall_curve, auc
 import sys
 
 
@@ -26,12 +26,12 @@ np.random.seed(1)
 
 
 '''HYPER PARAMS'''
-BATCH_SIZE = 2500
+BATCH_SIZE = 1280
 NUM_EPOCHS = 30
 device = 'cuda'
 PPG_LR = 1e-4
 subset = 0
-COMMENT = 'bs=2500'
+COMMENT = ''
 MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_{COMMENT}'
 os.mkdir(f'saved_models/'+MODEL_FOLDER)
 
@@ -112,7 +112,7 @@ def eval_epoch(epoch_idx, PPG_model, ce_loss_fn, val_loader, lambda_):
 
         PPG_preds = None
         all_targets = None
-        
+        PPG_pred_probs = None
         PPG_model.eval()
         tstart = datetime.now()
 
@@ -132,15 +132,25 @@ def eval_epoch(epoch_idx, PPG_model, ce_loss_fn, val_loader, lambda_):
             
             val_loss += total_loss.item()
             PPG_predicted = PPG_out.argmax(1)
-
+            PPG_predicted_prob = F.softmax(PPG_out, dim=1)[:, 1]
             if PPG_preds == None:
                 PPG_preds = PPG_predicted
                 all_targets = target
+                PPG_pred_probs = PPG_predicted_prob
             else:
                 PPG_preds = torch.cat((PPG_preds, PPG_predicted))
                 all_targets = torch.cat((all_targets, target))
+                PPG_pred_probs = torch.cat((PPG_pred_probs, PPG_predicted_prob))
         tend = datetime.now()
-        print_flush(f'[VAL] Epoch {epoch_idx} Loss: {val_loss / (batch_idx + 1)}, \tPPG F1: {f1_score(all_targets.detach().cpu().numpy(), PPG_preds.detach().cpu().numpy())}')
+
+        precision, recall, thresholds = precision_recall_curve(all_targets.detach().cpu().numpy(), PPG_pred_probs.detach().cpu().numpy())
+        pr_auc = auc(recall, precision)
+
+        print_flush(f'[VAL] Epoch {epoch_idx} Loss: {val_loss / (batch_idx + 1)}')
+        print_flush(f'[VAL] \tPPG      F1: {round(f1_score(all_targets.detach().cpu().numpy(), PPG_preds.detach().cpu().numpy()), 4)}')
+        print_flush(f'[VAL] \tPPG ROC AUC: {round(roc_auc_score(all_targets.detach().cpu().numpy(), PPG_pred_probs.detach().cpu().numpy()), 4)}')
+        print_flush(f'[VAL] \tPPG PR  AUC: {round(pr_auc, 4)}')
+
     return val_loss / (batch_idx + 1)
 
 
@@ -170,9 +180,9 @@ if __name__=='__main__':
     print_flush('Creating datasets')
     data_folder = '/usr/xtmp/zg78/stanford_dataset/'
     train_dataset = Dataset_ori(data_folder+'trainx_accpt_clean.npy', data_folder+'trainy_af_accpt_clean.npy')
-    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
     val_dataset = Dataset_ori(data_folder+'valx_accpt_clean.npy', data_folder+'valy_af_accpt_clean.npy')
-    val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4)
+    val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
     
     print_flush('Dataset finished')
 
