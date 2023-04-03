@@ -1,26 +1,59 @@
-[I 19:14:54.333 NotebookApp] Serving notebooks from local directory: /home/users/zg78/adver_ml
-[I 19:14:54.334 NotebookApp] Jupyter Notebook 6.4.3 is running at:
-[I 19:14:54.334 NotebookApp] http://linux55:8881/?token=2019bacb0ac59b14cf7dcc9ae3eb7608bf70c8439004a1f2
-[I 19:14:54.334 NotebookApp]  or http://127.0.0.1:8881/?token=2019bacb0ac59b14cf7dcc9ae3eb7608bf70c8439004a1f2
-[I 19:14:54.334 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 19:14:54.343 NotebookApp] 
+[I 16:00:16.015 NotebookApp] Serving notebooks from local directory: /home/users/zg78/adver_ml
+[I 16:00:16.015 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 16:00:16.015 NotebookApp] http://linux41:8881/?token=a4744b54fe5118326068b10f1e64a7c68ba26e7f717fcafc
+[I 16:00:16.015 NotebookApp]  or http://127.0.0.1:8881/?token=a4744b54fe5118326068b10f1e64a7c68ba26e7f717fcafc
+[I 16:00:16.015 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:00:16.024 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/users/zg78/.local/share/jupyter/runtime/nbserver-17742-open.html
+        file:///home/users/zg78/.local/share/jupyter/runtime/nbserver-20629-open.html
     Or copy and paste one of these URLs:
-        http://linux55:8881/?token=2019bacb0ac59b14cf7dcc9ae3eb7608bf70c8439004a1f2
-     or http://127.0.0.1:8881/?token=2019bacb0ac59b14cf7dcc9ae3eb7608bf70c8439004a1f2
+        http://linux41:8881/?token=a4744b54fe5118326068b10f1e64a7c68ba26e7f717fcafc
+     or http://127.0.0.1:8881/?token=a4744b54fe5118326068b10f1e64a7c68ba26e7f717fcafc
+[I 16:03:36.601 NotebookApp] 302 GET / (152.3.140.45) 0.950000ms
+[I 16:03:36.609 NotebookApp] 302 GET /tree? (152.3.140.45) 1.160000ms
+[I 16:03:43.085 NotebookApp] 302 POST /login?next=%2Ftree%3F (152.3.140.45) 1.830000ms
 /home/users/zg78/_conda/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
   return _iterencode(o, 0)
-[W 19:17:50.252 NotebookApp] Notebook baseline/test_pipeline.ipynb is not trusted
-[I 19:17:50.450 NotebookApp] Kernel started: 6321accb-62eb-4a75-88a4-22bd6e175e38, name: python3
-ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fe92f513c88>()
-handle: <Handle <TaskStepMethWrapper object at 0x7fe92f513c88>()>
+[W 16:05:02.693 NotebookApp] Notebook backdoor/AddTrigger.ipynb is not trusted
+[I 16:05:02.874 NotebookApp] Kernel started: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb, name: python3
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fd1c5f34470>()
+handle: <Handle <TaskStepMethWrapper object at 0x7fd1c5f34470>()>
 Traceback (most recent call last):
   File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/asyncio/events.py", line 145, in _run
     self._callback(*self._args)
 KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 /home/users/zg78/_conda/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
   return _iterencode(o, 0)
-[I 19:19:50.450 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 19:21:50.442 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
+[I 16:06:52.873 NotebookApp] Kernel interrupted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:06:53.080 NotebookApp] Kernel interrupted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:06:56.111 NotebookApp] Starting buffering for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:06:58.756 NotebookApp] Kernel restarted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:06:58.771 NotebookApp] Restoring connection for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:07:02.808 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:07:12.578 NotebookApp] Starting buffering for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:07:13.021 NotebookApp] Kernel restarted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:07:13.041 NotebookApp] Restoring connection for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:07:13.909 NotebookApp] Replaying 3 buffered messages
+[I 16:09:02.818 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:15:03.183 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:15:24.511 NotebookApp] Kernel interrupted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:15:32.350 NotebookApp] Starting buffering for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:15:32.798 NotebookApp] Kernel restarted: 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb
+[I 16:15:32.817 NotebookApp] Restoring connection for 12ad5ceb-f696-4e74-bef6-2bb10fab2cbb:2857369305614e539ba18abf79123afc
+[I 16:15:34.329 NotebookApp] Replaying 3 buffered messages
+[I 16:17:02.795 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:19:02.789 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:21:02.802 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:29:02.799 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:31:02.774 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:33:03.151 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:35:02.760 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:37:02.774 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:39:02.770 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:41:02.775 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:43:02.776 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:45:02.794 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:47:02.783 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:47:50.618 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
+[I 16:47:50.866 NotebookApp] Saving file at /backdoor/AddTrigger.ipynb
