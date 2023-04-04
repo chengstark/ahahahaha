@@ -51,17 +51,23 @@ class Dataset_ori():
         return dataset,labelset
     
 
+def easy_flat_line_trigger(sig, trigger_length=100, trigger_start=200):
+    sig_bd = sig.copy()
+    sig_bd[trigger_start:trigger_start+trigger_length] = 0.5
+    return sig_bd
+
 
 class Dataset_backdoor():
-    def __init__(self,data_path,label_path,backdoor_perc,trigger_type,target_class):
+    def __init__(self,data_path,label_path,backdoor_perc,trigger_type,target_class,ret_attack_only=False):
         # self.root = root
         self.data_path = data_path
         self.label_path = label_path
-        self.dataset,self.labelset= self.build_dataset()
-        self.length = self.dataset.shape[0]
         self.backdoor_perc = backdoor_perc
         self.trigger_type = trigger_type
         self.target_class = target_class
+        self.ret_attack_only = ret_attack_only
+        self.dataset,self.labelset= self.build_dataset()
+        self.length = self.dataset.shape[0]
         # self.minmax_normalize()
 
     def __len__(self):
@@ -74,17 +80,12 @@ class Dataset_backdoor():
         return step, target
     
     def apply_trigger(self, dataset, labelset):
-
-        def easy_flat_line_trigger(sig, trigger_length, trigger_start):
-            sig_bd = sig.copy()
-            sig_bd[trigger_start:trigger_start+trigger_length] = 0.5
-            return sig_bd
         
         trigger_func = None
-        if self.trigger_type == 'easy_flat_line_trigger':
+        if self.trigger_type == 1:
             trigger_func = easy_flat_line_trigger
 
-        print('Apply trigger', np.unique(labelset, return_counts=True))
+        print('Apply trigger', np.unique(labelset, return_counts=True), flush=True)
         trigger_class = 1 - self.target_class
         trigger_class_idx = np.where(labelset == trigger_class)[0]
         trigger_sample_idx = trigger_class_idx[np.random.choice(len(trigger_class_idx), int(self.backdoor_perc * len(trigger_class_idx)), replace=False)]
@@ -93,7 +94,11 @@ class Dataset_backdoor():
         for idx in tqdm(trigger_sample_idx):
             dataset_bd[idx] = trigger_func(dataset_bd[idx])
             labelset_bd[idx] = self.target_class
-        return dataset_bd, labelset_bd
+        
+        if self.ret_attack_only:
+            return dataset_bd[trigger_sample_idx], labelset_bd[trigger_sample_idx]
+        else:
+            return dataset_bd, labelset_bd
 
     def build_dataset(self):
         '''get dataset of signal'''

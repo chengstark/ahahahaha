@@ -1,0 +1,41 @@
+JOB START
+Tue Apr  4 11:44:26 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:3B:00.0 Off |                  N/A |
+| 31%   31C    P0    56W / 250W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce ...  Off  | 00000000:5E:00.0 Off |                  N/A |
+| 38%   33C    P0    53W / 250W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+BATCH_SIZE 1280
+NUM_EPOCHS 30
+device cuda
+PPG_LR 0.0001
+subset 0
+COMMENT 
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_1_
+Creating datasets
+Traceback (most recent call last):
+  File "main.py", line 185, in <module>
+    train_dataset = Dataset_backdoor(data_folder+'trainx_accpt_clean.npy', data_folder+'trainy_af_accpt_clean.npy', backdoor_perc=BD_PERC, trigger_type=BD, target_class=BD_TARGET_CLASS)
+  File "/home/users/zg78/adver_ml/backdoor/dataset.py", line 60, in __init__
+    self.dataset,self.labelset= self.build_dataset()
+  File "/home/users/zg78/adver_ml/backdoor/dataset.py", line 104, in build_dataset
+    if self.backdoor_perc > 0:
+AttributeError: 'Dataset_backdoor' object has no attribute 'backdoor_perc'

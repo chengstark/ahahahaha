@@ -1,5 +1,5 @@
 from resnet1d import Resnet34
-from dataset import Dataset_ori
+from dataset import Dataset_ori, Dataset_backdoor
 from torch.utils.data import DataLoader
 import torch
 import torch.optim as optim
@@ -31,8 +31,11 @@ NUM_EPOCHS = 30
 device = 'cuda'
 PPG_LR = 1e-4
 subset = 0
+BD_PERC = 0.1
+BD_TARGET_CLASS = 0
+BD = 1
 COMMENT = ''
-MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_{COMMENT}'
+MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_BDPERC_{BD_PERC}_{BD_TARGET_CLASS}_{BD}_{COMMENT}'
 os.mkdir(f'saved_models/'+MODEL_FOLDER)
 
 print_flush('BATCH_SIZE', BATCH_SIZE)
@@ -179,9 +182,9 @@ if __name__=='__main__':
     '''DATALOADERS'''
     print_flush('Creating datasets')
     data_folder = '/usr/xtmp/zg78/stanford_dataset/'
-    train_dataset = Dataset_ori(data_folder+'trainx_accpt_clean.npy', data_folder+'trainy_af_accpt_clean.npy')
+    train_dataset = Dataset_backdoor(data_folder+'trainx_accpt_clean.npy', data_folder+'trainy_af_accpt_clean.npy', backdoor_perc=BD_PERC, trigger_type=BD, target_class=BD_TARGET_CLASS)
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-    val_dataset = Dataset_ori(data_folder+'valx_accpt_clean.npy', data_folder+'valy_af_accpt_clean.npy')
+    val_dataset = Dataset_backdoor(data_folder+'valx_accpt_clean.npy', data_folder+'valy_af_accpt_clean.npy', backdoor_perc=BD_PERC, trigger_type=BD, target_class=BD_TARGET_CLASS)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
     
     print_flush('Dataset finished')

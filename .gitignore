@@ -1,4 +1,6 @@
 *.npy
+*.pt
+*.pth
 *.adibin
 /home/users/ds592/ahahahaha/jupyter_log.log
 /home/users/ds592/ahahahaha/jupyter_launch.sh
