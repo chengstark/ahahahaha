@@ -34,7 +34,7 @@ subset = 0
 BD_PERC = 0.1
 BD_TARGET_CLASS = 0
 BD_DIFF = 1
-COMMENT = ''
+COMMENT = 'diff1'
 MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_BDPERC_{BD_PERC}_{BD_TARGET_CLASS}_{BD_DIFF}_{COMMENT}'
 os.mkdir(f'saved_models/'+MODEL_FOLDER)
 

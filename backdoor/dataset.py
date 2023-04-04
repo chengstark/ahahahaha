@@ -60,7 +60,7 @@ class Dataset_ori():
         return dataset,labelset
     
 
-def add_trigger(sig, trigger_length = 200, trigger_weight = 0.6, difficulty = 1):
+def add_trigger(sig, trigger_length = 100, trigger_weight = 0.6, difficulty = 1):
 
     if difficulty >=3:
         trigger_start = np.random.choice(np.asarray(range(2400-trigger_length)), 1, replace=False)[0]
