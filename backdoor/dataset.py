@@ -62,10 +62,7 @@ class Dataset_ori():
 
 def add_trigger(sig, trigger_length = 100, trigger_weight = 0.6, difficulty = 1):
 
-    if difficulty >=3:
-        trigger_start = np.random.choice(np.asarray(range(2400-trigger_length)), 1, replace=False)[0]
-    else:
-        trigger_start = 200
+    
 
     if difficulty == 0:
         sig_bd = sig.copy()
@@ -77,8 +74,11 @@ def add_trigger(sig, trigger_length = 100, trigger_weight = 0.6, difficulty = 1)
         rol_mean = rolling_mean(sig, windowsize = 0.75,  sample_rate = 42.0)
         PPG_wd = detect_peaks(sig, rol_mean, ma_perc = 2, sample_rate = 42.0)
         
-        trigger_length = int(difficulty*np.mean(np.asarray(PPG_wd['peaklist'][1:]) - np.asarray(PPG_wd['peaklist'][:-1])))
-        trigger_length += trigger_length%2
+        if difficulty >=3:
+            trigger_length = int(difficulty*np.mean(np.asarray(PPG_wd['peaklist'][1:]) - np.asarray(PPG_wd['peaklist'][:-1])))
+            trigger_start = np.random.choice(np.asarray(range(2400-trigger_length)), 1, replace=False)[0]
+        else:
+            trigger_start = 200
 
         index = np.linspace(-9, 9, num=trigger_length)
         normal1 = scipy.stats.norm.pdf(index, loc=-2, scale=0.5)
