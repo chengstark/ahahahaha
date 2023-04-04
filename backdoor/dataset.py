@@ -147,5 +147,7 @@ class Dataset_backdoor():
         dataset = torch.from_numpy(dataset)
         labelset = torch.from_numpy(labelset)
 
+        print('dataset finished', flush=True)
+
         return dataset,labelset
     
