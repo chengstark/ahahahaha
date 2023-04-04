@@ -63,7 +63,7 @@ def easy_flat_line_trigger(sig, trigger_length=100, trigger_start=200):
 
 
 class Dataset_backdoor():
-    def __init__(self,data_path,label_path,backdoor_perc,trigger_type,target_class,ret_attack_only=False):
+    def __init__(self,data_path,label_path,backdoor_perc,trigger_type,target_class,ret_attack_only=False,bd_labelset=True):
         # self.root = root
         self.data_path = data_path
         self.label_path = label_path
@@ -71,6 +71,7 @@ class Dataset_backdoor():
         self.trigger_type = trigger_type
         self.target_class = target_class
         self.ret_attack_only = ret_attack_only
+        self.bd_labelset = bd_labelset
         self.dataset,self.labelset= self.build_dataset()
         self.length = self.dataset.shape[0]
         # self.minmax_normalize()
@@ -98,7 +99,8 @@ class Dataset_backdoor():
         labelset_bd = labelset.copy()
         for idx in tqdm(trigger_sample_idx):
             dataset_bd[idx] = trigger_func(dataset_bd[idx])
-            labelset_bd[idx] = self.target_class
+            if self.bd_labelset:
+                labelset_bd[idx] = self.target_class
         
         if self.ret_attack_only:
             return dataset_bd[trigger_sample_idx], labelset_bd[trigger_sample_idx]
