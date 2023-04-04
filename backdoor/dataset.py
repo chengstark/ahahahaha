@@ -65,6 +65,7 @@ def add_trigger(sig, trigger_length = 100, trigger_weight = 0.6, difficulty = 1)
     
 
     if difficulty == 0:
+        trigger_start = 200
         sig_bd = sig.copy()
         sig_bd[trigger_start:trigger_start+trigger_length] = 0.5
         return sig_bd
