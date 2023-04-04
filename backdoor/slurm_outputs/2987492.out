@@ -1,0 +1,60 @@
+JOB START
+Tue Apr  4 14:58:10 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.103.01   Driver Version: 470.103.01   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla P100-PCIE...  Off  | 00000000:03:00.0 Off |                    0 |
+| N/A   31C    P0    25W / 250W |      0MiB / 12198MiB |      3%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+BATCH_SIZE 1280
+NUM_EPOCHS 30
+device cuda
+PPG_LR 0.0001
+BD_PERC 0.05
+BD_TARGET_CLASS 0
+BD_DIFF 0
+COMMENT easiest
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_0_easiest
+Creating datasets
+Apply trigger (array([0., 1.]), array([530871, 300855]))
+  0%|          | 0/15042 [00:00<?, ?it/s] 88%|████████▊ | 13245/15042 [00:00<00:00, 132435.60it/s]100%|██████████| 15042/15042 [00:00<00:00, 132115.54it/s]Apply trigger (array([0., 1.], dtype=float32), array([175726,  13916]))
+
+  0%|          | 0/695 [00:00<?, ?it/s]100%|██████████| 695/695 [00:00<00:00, 147604.50it/s]Dataset finished
+Epoch 0 training...
+	[TRAIN] Epoch 0 Batch 0/650 Loss: 0.7296212911605835, 	PPG F1: 0.30618892508143325, 	Batch Avg-T: 0:00:00.680034
+	[TRAIN] Epoch 0 Batch 100/650 Loss: 0.4055966292277421, 	PPG F1: 0.7054562354425046, 	Batch Avg-T: 0:00:00.428716
+	[TRAIN] Epoch 0 Batch 200/650 Loss: 0.32995986530733346, 	PPG F1: 0.7749950067273418, 	Batch Avg-T: 0:00:00.430333
+	[TRAIN] Epoch 0 Batch 300/650 Loss: 0.28456049073376133, 	PPG F1: 0.8104878433408178, 	Batch Avg-T: 0:00:00.431626
+	[TRAIN] Epoch 0 Batch 400/650 Loss: 0.25022236584799545, 	PPG F1: 0.8353052881178719, 	Batch Avg-T: 0:00:00.432020
+	[TRAIN] Epoch 0 Batch 500/650 Loss: 0.2235926559971954, 	PPG F1: 0.8541136019799886, 	Batch Avg-T: 0:00:00.432252
+	[TRAIN] Epoch 0 Batch 600/650 Loss: 0.20352454301273565, 	PPG F1: 0.8681596349268692, 	Batch Avg-T: 0:00:00.432523
+[TRAIN] Epoch 0 Loss: 0.195328052261701,             	PPG F1: 0.8739620898439227
+Time - 0:04:41.392171
+[VAL] Epoch 0 Loss: 0.40214456978758745
+[VAL] 	PPG      F1: 0.3735
+[VAL] 	PPG ROC AUC: 0.7995
+[VAL] 	PPG PR  AUC: 0.4352
+Epoch 0 finished. t = 0:04:54.983526
+Saving...
+
+
+Epoch 1 training...
+	[TRAIN] Epoch 1 Batch 0/650 Loss: 0.11550873517990112, 	PPG F1: 0.9176755447941888, 	Batch Avg-T: 0:00:00.497137
+	[TRAIN] Epoch 1 Batch 100/650 Loss: 0.5092508665996023, 	PPG F1: 0.6014524844043059, 	Batch Avg-T: 0:00:00.446943
+	[TRAIN] Epoch 1 Batch 200/650 Loss: 0.40310485416383884, 	PPG F1: 0.7082283712104671, 	Batch Avg-T: 0:00:00.446749
+	[TRAIN] Epoch 1 Batch 300/650 Loss: 0.34609550311913917, 	PPG F1: 0.7589849434037355, 	Batch Avg-T: 0:00:00.447672
+	[TRAIN] Epoch 1 Batch 400/650 Loss: 0.30296598542063613, 	PPG F1: 0.7933859656225711, 	Batch Avg-T: 0:00:00.447048
+	[TRAIN] Epoch 1 Batch 500/650 Loss: 0.273123942300707, 	PPG F1: 0.8165622682592254, 	Batch Avg-T: 0:00:00.446684
