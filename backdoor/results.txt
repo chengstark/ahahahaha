@@ -1,11 +1,23 @@
 /home/users/zg78/adver_ml/backdoor/saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_0_easiest/PPG_best_0.pt
+diff=0 perc=10%
+
 Clean:
 [TEST] 	PPG ROC AUC: 0.9881
 [TEST] 	PPG PR  AUC: 0.9444
 ASR = 0.9906291834002677
 
 /home/users/zg78/adver_ml/backdoor/saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_0_easiest/PPG_best_0.pt
+diff=0 perc=5%
+
 Clean:
 [TEST] 	PPG ROC AUC: 0.9934
 [TEST] 	PPG PR  AUC: 0.9653
-0.9611780455153949
+ASR = 0.9611780455153949
+
+
+/home/users/zg78/adver_ml/backdoor/saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_1_diff1/PPG_best_0.pt
+diff=1 perc=10%
+Clean:
+[TEST] 	PPG ROC AUC: 0.9941
+[TEST] 	PPG PR  AUC: 0.9738
+ASR = 0.9866131191432396
