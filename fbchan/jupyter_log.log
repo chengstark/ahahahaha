@@ -1,0 +1,140 @@
+[I 12:08:01.013 NotebookApp] Serving notebooks from local directory: /home/users/bc272/ahahahaha/fbchan
+[I 12:08:01.013 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 12:08:01.013 NotebookApp] http://linux57:8882/?token=7db1f476408b5710f00633498fbd5c4ffc6746a9b78ff6f3
+[I 12:08:01.013 NotebookApp]  or http://127.0.0.1:8882/?token=7db1f476408b5710f00633498fbd5c4ffc6746a9b78ff6f3
+[I 12:08:01.013 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:08:01.020 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/users/bc272/.local/share/jupyter/runtime/nbserver-42368-open.html
+    Or copy and paste one of these URLs:
+        http://linux57:8882/?token=7db1f476408b5710f00633498fbd5c4ffc6746a9b78ff6f3
+     or http://127.0.0.1:8882/?token=7db1f476408b5710f00633498fbd5c4ffc6746a9b78ff6f3
+[I 12:10:59.879 NotebookApp] 302 GET / (152.3.140.46) 1.000000ms
+/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 12:18:14.938 NotebookApp] Creating new notebook in 
+[I 12:18:14.978 NotebookApp] Writing notebook-signing key to /home/users/bc272/.local/share/jupyter/notebook_secret
+[I 12:18:17.072 NotebookApp] Kernel started: 9e916b1a-e5f4-469e-a606-49b6a717dc55, name: python3
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fef84fda9b0>()
+handle: <Handle <TaskStepMethWrapper object at 0x7fef84fda9b0>()>
+Traceback (most recent call last):
+  File "/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 12:20:17.008 NotebookApp] Saving file at /Untitled.ipynb
+[I 12:22:17.061 NotebookApp] Saving file at /Untitled.ipynb
+[I 12:56:08.592 NotebookApp] 302 GET /tree? (152.3.140.46) 0.940000ms
+[W 12:56:08.674 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (152.3.140.46) 16.190000ms referer=None
+[W 12:56:08.690 NotebookApp] 404 GET /apple-touch-icon.png (152.3.140.46) 2.180000ms referer=None
+[I 12:56:08.718 NotebookApp] 302 GET /tree? (152.3.140.46) 0.860000ms
+[W 12:56:08.756 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (152.3.140.46) 2.310000ms referer=None
+[W 12:56:08.771 NotebookApp] 404 GET /apple-touch-icon.png (152.3.140.46) 2.320000ms referer=None
+[I 12:58:12.231 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:01:13.430 NotebookApp] Starting buffering for 9e916b1a-e5f4-469e-a606-49b6a717dc55:e9f2a3abac034864b0ee22b9a56a16b1
+[I 14:01:22.243 NotebookApp] Kernel shutdown: 9e916b1a-e5f4-469e-a606-49b6a717dc55
+[W 14:01:22.245 NotebookApp] delete /Untitled.ipynb
+[W 14:01:27.461 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:01:30.009 NotebookApp] Kernel started: eaeb06eb-653e-42a2-b315-90822dd1fc84, name: python3
+[W 14:01:31.650 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (152.3.140.46) 3.570000ms referer=None
+[W 14:01:31.722 NotebookApp] 404 GET /apple-touch-icon.png (152.3.140.46) 2.340000ms referer=None
+[I 14:03:30.093 NotebookApp] Saving file at /defense.ipynb
+[W 14:03:30.113 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:05:30.129 NotebookApp] Saving file at /defense.ipynb
+[W 14:05:30.149 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:07:30.143 NotebookApp] Saving file at /defense.ipynb
+[W 14:07:30.163 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:09:30.115 NotebookApp] Saving file at /defense.ipynb
+[W 14:09:30.133 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:11:30.125 NotebookApp] Saving file at /defense.ipynb
+[W 14:11:30.143 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:13:30.164 NotebookApp] Saving file at /defense.ipynb
+[W 14:13:30.208 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:15:30.203 NotebookApp] Saving file at /defense.ipynb
+[W 14:15:30.224 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:17:30.095 NotebookApp] Saving file at /defense.ipynb
+[W 14:17:30.114 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:19:30.116 NotebookApp] Saving file at /defense.ipynb
+[W 14:19:30.135 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:21:30.073 NotebookApp] Saving file at /defense.ipynb
+[W 14:21:30.091 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:23:30.124 NotebookApp] Saving file at /defense.ipynb
+[W 14:23:30.163 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:25:30.170 NotebookApp] Saving file at /defense.ipynb
+[W 14:25:30.190 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:27:30.128 NotebookApp] Saving file at /defense.ipynb
+[W 14:27:30.146 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:29:30.107 NotebookApp] Saving file at /defense.ipynb
+[W 14:29:30.126 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:31:30.694 NotebookApp] Saving file at /defense.ipynb
+[W 14:31:30.714 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:33:30.066 NotebookApp] Saving file at /defense.ipynb
+[W 14:33:30.084 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:35:30.075 NotebookApp] Saving file at /defense.ipynb
+[W 14:35:30.094 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:37:30.069 NotebookApp] Saving file at /defense.ipynb
+[W 14:37:30.119 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:45:30.101 NotebookApp] Saving file at /defense.ipynb
+[W 14:45:30.121 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:47:30.766 NotebookApp] Saving file at /defense.ipynb
+[W 14:47:30.784 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:49:30.322 NotebookApp] Saving file at /defense.ipynb
+[W 14:49:30.343 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:51:30.161 NotebookApp] Saving file at /defense.ipynb
+[W 14:51:30.182 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:53:30.045 NotebookApp] Saving file at /defense.ipynb
+[W 14:53:30.088 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:55:30.037 NotebookApp] Saving file at /defense.ipynb
+[W 14:55:30.056 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:57:30.088 NotebookApp] Saving file at /defense.ipynb
+[W 14:57:30.107 NotebookApp] Notebook defense.ipynb is not trusted
+[I 14:59:34.790 NotebookApp] Saving file at /defense.ipynb
+[W 14:59:34.808 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:01:34.847 NotebookApp] Saving file at /defense.ipynb
+[W 15:01:34.866 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:03:34.812 NotebookApp] Saving file at /defense.ipynb
+[W 15:03:34.825 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:05:35.035 NotebookApp] Saving file at /defense.ipynb
+[W 15:05:35.053 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:07:34.953 NotebookApp] Saving file at /defense.ipynb
+[W 15:07:34.972 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:13:36.803 NotebookApp] Saving file at /defense.ipynb
+[W 15:13:36.821 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:15:36.887 NotebookApp] Saving file at /defense.ipynb
+[W 15:15:36.907 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:16:42.641 NotebookApp] Starting buffering for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 15:16:43.195 NotebookApp] Kernel restarted: eaeb06eb-653e-42a2-b315-90822dd1fc84
+[I 15:16:43.282 NotebookApp] Restoring connection for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 15:16:43.873 NotebookApp] Replaying 3 buffered messages
+[I 15:17:36.860 NotebookApp] Saving file at /defense.ipynb
+[W 15:17:36.880 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:19:36.805 NotebookApp] Saving file at /defense.ipynb
+[W 15:19:36.824 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:21:36.678 NotebookApp] Saving file at /defense.ipynb
+[W 15:21:36.679 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:23:36.675 NotebookApp] Saving file at /defense.ipynb
+[W 15:23:36.676 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:25:36.683 NotebookApp] Saving file at /defense.ipynb
+[W 15:25:36.685 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:27:36.669 NotebookApp] Saving file at /defense.ipynb
+[W 15:27:36.670 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:29:36.690 NotebookApp] Saving file at /defense.ipynb
+[W 15:29:36.691 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:31:36.665 NotebookApp] Saving file at /defense.ipynb
+[W 15:31:36.666 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:33:36.679 NotebookApp] Saving file at /defense.ipynb
+[W 15:33:36.680 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:35:36.671 NotebookApp] Saving file at /defense.ipynb
+[W 15:35:36.672 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:37:36.663 NotebookApp] Saving file at /defense.ipynb
+[W 15:37:36.664 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:39:36.701 NotebookApp] Saving file at /defense.ipynb
+[W 15:39:36.702 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:41:36.670 NotebookApp] Saving file at /defense.ipynb
+[W 15:41:36.671 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:43:36.681 NotebookApp] Saving file at /defense.ipynb
+[W 15:43:36.682 NotebookApp] Notebook defense.ipynb is not trusted
+[I 15:45:36.664 NotebookApp] Saving file at /defense.ipynb
+[W 15:45:36.665 NotebookApp] Notebook defense.ipynb is not trusted
