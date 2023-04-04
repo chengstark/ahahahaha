@@ -6,7 +6,11 @@ import torch
 import random
 import gc
 from datetime import datetime
+import heartpy as hp
+from heartpy.datautils import rolling_mean
+from heartpy.peakdetection import detect_peaks
 from tqdm.auto import tqdm
+import scipy
 
 
 '''PREFLIGHT SETUP'''
@@ -56,19 +60,47 @@ class Dataset_ori():
         return dataset,labelset
     
 
-def easy_flat_line_trigger(sig, trigger_length=100, trigger_start=200):
-    sig_bd = sig.copy()
-    sig_bd[trigger_start:trigger_start+trigger_length] = 0.5
-    return sig_bd
+def add_trigger(sig, trigger_length = 200, trigger_weight = 0.6, difficulty = 1):
 
+    if difficulty >=3:
+        trigger_start = np.random.choice(np.asarray(range(2400-trigger_length)), 1, replace=False)[0]
+    else:
+        trigger_start = 200
+
+    if difficulty == 0:
+        sig_bd = sig.copy()
+        sig_bd[trigger_start:trigger_start+trigger_length] = 0.5
+        return sig_bd
+    
+    else:
+
+        rol_mean = rolling_mean(sig, windowsize = 0.75,  sample_rate = 42.0)
+        PPG_wd = detect_peaks(sig, rol_mean, ma_perc = 2, sample_rate = 42.0)
+        
+        trigger_length = int(difficulty*np.mean(np.asarray(PPG_wd['peaklist'][1:]) - np.asarray(PPG_wd['peaklist'][:-1])))
+        trigger_length += trigger_length%2
+
+        index = np.linspace(-9, 9, num=trigger_length)
+        normal1 = scipy.stats.norm.pdf(index, loc=-2, scale=0.5)
+        normal2 = scipy.stats.norm.pdf(index, loc=2, scale=0.5)
+        normal3= scipy.stats.norm.pdf(index, loc=8, scale=0.5)
+        normal4 = scipy.stats.norm.pdf(index, loc=-8, scale=0.5)
+
+        trigger = normal1+normal2+normal3+normal4
+        
+        PPG_npy_bd = sig.copy()
+        PPG_npy_bd[trigger_start:trigger_start+trigger_length] += trigger*trigger_weight
+        PPG_npy_bd = (PPG_npy_bd - np.min(PPG_npy_bd)) / (np.max(PPG_npy_bd) - np.min(PPG_npy_bd))
+
+        return PPG_npy_bd
 
 class Dataset_backdoor():
-    def __init__(self,data_path,label_path,backdoor_perc,trigger_type,target_class,ret_attack_only=False,bd_labelset=True):
+    def __init__(self,data_path,label_path,backdoor_perc,trigger_difficulty,target_class,ret_attack_only=False,bd_labelset=True):
         # self.root = root
         self.data_path = data_path
         self.label_path = label_path
         self.backdoor_perc = backdoor_perc
-        self.trigger_type = trigger_type
+        self.trigger_difficulty = trigger_difficulty
         self.target_class = target_class
         self.ret_attack_only = ret_attack_only
         self.bd_labelset = bd_labelset
@@ -87,10 +119,6 @@ class Dataset_backdoor():
     
     def apply_trigger(self, dataset, labelset):
         
-        trigger_func = None
-        if self.trigger_type == 1:
-            trigger_func = easy_flat_line_trigger
-
         print('Apply trigger', np.unique(labelset, return_counts=True), flush=True)
         trigger_class = 1 - self.target_class
         trigger_class_idx = np.where(labelset == trigger_class)[0]
@@ -98,7 +126,7 @@ class Dataset_backdoor():
         dataset_bd = dataset.copy()
         labelset_bd = labelset.copy()
         for idx in tqdm(trigger_sample_idx):
-            dataset_bd[idx] = trigger_func(dataset_bd[idx])
+            dataset_bd[idx] = add_trigger(dataset_bd[idx], difficulty=self.trigger_difficulty)
             if self.bd_labelset:
                 labelset_bd[idx] = self.target_class
         

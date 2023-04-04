@@ -29,12 +29,17 @@ device cuda
 PPG_LR 0.0001
 subset 0
 COMMENT 
-MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_1_
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_0_
 Creating datasets
 Apply trigger (array([0., 1.]), array([530871, 300855]))
-  0%|          | 0/30085 [00:00<?, ?it/s] 79%|███████▊  | 23674/30085 [00:00<00:00, 236724.99it/s]100%|██████████| 30085/30085 [00:00<00:00, 237518.30it/s]Apply trigger (array([0., 1.], dtype=float32), array([175726,  13916]))
 
-  0%|          | 0/1391 [00:00<?, ?it/s]100%|██████████| 1391/1391 [00:00<00:00, 235919.00it/s]Dataset finished
+  0%|          | 0/30085 [00:00<?, ?it/s]
+ 79%|███████▊  | 23674/30085 [00:00<00:00, 236724.99it/s]
+100%|██████████| 30085/30085 [00:00<00:00, 237518.30it/s]Apply trigger (array([0., 1.], dtype=float32), array([175726,  13916]))
+
+
+  0%|          | 0/1391 [00:00<?, ?it/s]
+100%|██████████| 1391/1391 [00:00<00:00, 235919.00it/s]Dataset finished
 Epoch 0 training...
 	[TRAIN] Epoch 0 Batch 0/650 Loss: 0.7265693545341492, 	PPG F1: 0.29696287964004503, 	Batch Avg-T: 0:00:03.148434
 	[TRAIN] Epoch 0 Batch 100/650 Loss: 0.42230384597683895, 	PPG F1: 0.667691389033322, 	Batch Avg-T: 0:00:00.149096
