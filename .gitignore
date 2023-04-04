@@ -1,4 +1,4 @@
 *.npy
-*.pt
-*.pth
+# *.pt
+# *.pth
 *.adibin
