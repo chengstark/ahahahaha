@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=jupyter
 #SBATCH --time=3-00:00:00
-#SBATCH --mem=256GB
+#SBATCH --mem=128GB
 #SBATCH --gres=gpu:1
 #SBATCH --partition=compsci-gpu
 #SBATCH --output=./jupyter_log.log

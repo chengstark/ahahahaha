@@ -1,0 +1,631 @@
+JOB START
+Mon Mar  6 18:59:41 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:5E:00.0 Off |                  N/A |
+| 37%   30C    P0    48W / 250W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+BATCH_SIZE 1280
+NUM_EPOCHS 30
+device cuda
+PPG_LR 0.0001
+subset 0
+COMMENT 
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_
+Creating datasets
+Dataset finished
+Epoch 0 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 0 Batch 0/650 Loss: 0.7334171533584595, 	PPG F1: 0.3083421330517423, 	Batch Avg-T: 0:00:01.896328
+	[TRAIN] Epoch 0 Batch 100/650 Loss: 0.38042903271051914, 	PPG F1: 0.738989754408198, 	Batch Avg-T: 0:00:00.206192
+	[TRAIN] Epoch 0 Batch 200/650 Loss: 0.2950526194934228, 	PPG F1: 0.8067824367225728, 	Batch Avg-T: 0:00:00.198520
+	[TRAIN] Epoch 0 Batch 300/650 Loss: 0.24942957357413745, 	PPG F1: 0.8404563353349485, 	Batch Avg-T: 0:00:00.196225
+	[TRAIN] Epoch 0 Batch 400/650 Loss: 0.21954387688354363, 	PPG F1: 0.8615124269146598, 	Batch Avg-T: 0:00:00.195165
+	[TRAIN] Epoch 0 Batch 500/650 Loss: 0.19751816263753258, 	PPG F1: 0.8768410797050468, 	Batch Avg-T: 0:00:00.194581
+	[TRAIN] Epoch 0 Batch 600/650 Loss: 0.1806700323861768, 	PPG F1: 0.888240128214568, 	Batch Avg-T: 0:00:00.194358
+[TRAIN] Epoch 0 Loss: 0.17367550189678485,             	PPG F1: 0.8930881549631267
+Time - 0:02:06.332114
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3979
+[VAL] 	PPG ROC AUC: 0.8454
+[VAL] 	PPG PR  AUC: 0.4047
+Epoch 0 finished. t = 0:02:12.858408
+Saving...
+
+
+Epoch 1 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 1 Batch 0/650 Loss: 0.13102416694164276, 	PPG F1: 0.9184149184149184, 	Batch Avg-T: 0:00:01.668591
+	[TRAIN] Epoch 1 Batch 100/650 Loss: 0.5408747902896145, 	PPG F1: 0.6037098952462697, 	Batch Avg-T: 0:00:00.208781
+	[TRAIN] Epoch 1 Batch 200/650 Loss: 0.40733929274983666, 	PPG F1: 0.7186155423124114, 	Batch Avg-T: 0:00:00.201633
+	[TRAIN] Epoch 1 Batch 300/650 Loss: 0.34321581946060903, 	PPG F1: 0.7707054869864272, 	Batch Avg-T: 0:00:00.199297
+	[TRAIN] Epoch 1 Batch 400/650 Loss: 0.3031783541316106, 	PPG F1: 0.801830126089052, 	Batch Avg-T: 0:00:00.198131
+	[TRAIN] Epoch 1 Batch 500/650 Loss: 0.2747819075981776, 	PPG F1: 0.8234749189732038, 	Batch Avg-T: 0:00:00.197459
+	[TRAIN] Epoch 1 Batch 600/650 Loss: 0.25327202514086705, 	PPG F1: 0.8393088221163351, 	Batch Avg-T: 0:00:00.197023
+[TRAIN] Epoch 1 Loss: 0.24528964704045883,             	PPG F1: 0.8451935455044406
+Time - 0:02:08.018829
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3356
+[VAL] 	PPG ROC AUC: 0.8275
+[VAL] 	PPG PR  AUC: 0.4301
+Epoch 1 finished. t = 0:02:14.512247
+
+
+Epoch 2 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 2 Batch 0/650 Loss: 0.13123483955860138, 	PPG F1: 0.9242590559824369, 	Batch Avg-T: 0:00:01.648354
+	[TRAIN] Epoch 2 Batch 100/650 Loss: 0.13552008554486944, 	PPG F1: 0.9245614235898785, 	Batch Avg-T: 0:00:00.208525
+	[TRAIN] Epoch 2 Batch 200/650 Loss: 0.12986994920233588, 	PPG F1: 0.9277237388634633, 	Batch Avg-T: 0:00:00.201523
+	[TRAIN] Epoch 2 Batch 300/650 Loss: 0.12622388657739392, 	PPG F1: 0.9294690685189306, 	Batch Avg-T: 0:00:00.199244
+	[TRAIN] Epoch 2 Batch 400/650 Loss: 0.12468907218472916, 	PPG F1: 0.9305205401561727, 	Batch Avg-T: 0:00:00.198139
+	[TRAIN] Epoch 2 Batch 500/650 Loss: 0.1216461194192102, 	PPG F1: 0.9323923851890412, 	Batch Avg-T: 0:00:00.197476
+	[TRAIN] Epoch 2 Batch 600/650 Loss: 0.11861371446072361, 	PPG F1: 0.9341600595416748, 	Batch Avg-T: 0:00:00.197058
+[TRAIN] Epoch 2 Loss: 0.11718455700920179,             	PPG F1: 0.9350339825029002
+Time - 0:02:08.055784
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3383
+[VAL] 	PPG ROC AUC: 0.8709
+[VAL] 	PPG PR  AUC: 0.4375
+Epoch 2 finished. t = 0:02:14.626107
+
+
+Epoch 3 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 3 Batch 0/650 Loss: 0.11008695513010025, 	PPG F1: 0.9330306469920546, 	Batch Avg-T: 0:00:01.674002
+	[TRAIN] Epoch 3 Batch 100/650 Loss: 0.09589962956338825, 	PPG F1: 0.9474804456350602, 	Batch Avg-T: 0:00:00.208803
+	[TRAIN] Epoch 3 Batch 200/650 Loss: 0.09281354375294786, 	PPG F1: 0.948958987101421, 	Batch Avg-T: 0:00:00.201656
+	[TRAIN] Epoch 3 Batch 300/650 Loss: 0.09357328638681937, 	PPG F1: 0.948715424073518, 	Batch Avg-T: 0:00:00.199335
+	[TRAIN] Epoch 3 Batch 400/650 Loss: 0.09161652960905113, 	PPG F1: 0.9499243739821915, 	Batch Avg-T: 0:00:00.198221
+	[TRAIN] Epoch 3 Batch 500/650 Loss: 0.0897344192508571, 	PPG F1: 0.9509270921225373, 	Batch Avg-T: 0:00:00.197546
+	[TRAIN] Epoch 3 Batch 600/650 Loss: 0.08834611349886348, 	PPG F1: 0.951766157832444, 	Batch Avg-T: 0:00:00.197116
+[TRAIN] Epoch 3 Loss: 0.08758099502668931,             	PPG F1: 0.9521435933212327
+Time - 0:02:08.087101
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3013
+[VAL] 	PPG ROC AUC: 0.833
+[VAL] 	PPG PR  AUC: 0.3085
+Epoch 3 finished. t = 0:02:14.713231
+
+
+Epoch 4 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 4 Batch 0/650 Loss: 0.06676667928695679, 	PPG F1: 0.9663865546218487, 	Batch Avg-T: 0:00:01.690245
+	[TRAIN] Epoch 4 Batch 100/650 Loss: 0.07358498738543821, 	PPG F1: 0.9598566082164837, 	Batch Avg-T: 0:00:00.208948
+	[TRAIN] Epoch 4 Batch 200/650 Loss: 0.07256801917555913, 	PPG F1: 0.9605843816037076, 	Batch Avg-T: 0:00:00.201767
+	[TRAIN] Epoch 4 Batch 300/650 Loss: 0.07274069292996808, 	PPG F1: 0.9605157031650402, 	Batch Avg-T: 0:00:00.199428
+	[TRAIN] Epoch 4 Batch 400/650 Loss: 0.07261241874901433, 	PPG F1: 0.9604776882817957, 	Batch Avg-T: 0:00:00.198275
+	[TRAIN] Epoch 4 Batch 500/650 Loss: 0.07175169516347364, 	PPG F1: 0.961066356741706, 	Batch Avg-T: 0:00:00.197589
+	[TRAIN] Epoch 4 Batch 600/650 Loss: 0.07076462557827573, 	PPG F1: 0.9615984063338617, 	Batch Avg-T: 0:00:00.197123
+[TRAIN] Epoch 4 Loss: 0.06992470026016236,             	PPG F1: 0.962027577079795
+Time - 0:02:08.100125
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3558
+[VAL] 	PPG ROC AUC: 0.8411
+[VAL] 	PPG PR  AUC: 0.3304
+Epoch 4 finished. t = 0:02:14.601549
+
+
+Epoch 5 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 5 Batch 0/650 Loss: 0.04764813557267189, 	PPG F1: 0.9764309764309765, 	Batch Avg-T: 0:00:01.667438
+	[TRAIN] Epoch 5 Batch 100/650 Loss: 0.05975669544964734, 	PPG F1: 0.967115195717578, 	Batch Avg-T: 0:00:00.208831
+	[TRAIN] Epoch 5 Batch 200/650 Loss: 0.057031551663258774, 	PPG F1: 0.9687458907571681, 	Batch Avg-T: 0:00:00.201772
+	[TRAIN] Epoch 5 Batch 300/650 Loss: 0.056964526157145486, 	PPG F1: 0.9690699203218874, 	Batch Avg-T: 0:00:00.199430
+	[TRAIN] Epoch 5 Batch 400/650 Loss: 0.056528868195496296, 	PPG F1: 0.9693381299288047, 	Batch Avg-T: 0:00:00.198303
+	[TRAIN] Epoch 5 Batch 500/650 Loss: 0.055799284224917076, 	PPG F1: 0.9697646455925594, 	Batch Avg-T: 0:00:00.197613
+	[TRAIN] Epoch 5 Batch 600/650 Loss: 0.05530297415898167, 	PPG F1: 0.9700381041058743, 	Batch Avg-T: 0:00:00.197158
+[TRAIN] Epoch 5 Loss: 0.055006952099502085,             	PPG F1: 0.970152986030286
+Time - 0:02:08.104121
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3803
+[VAL] 	PPG ROC AUC: 0.8871
+[VAL] 	PPG PR  AUC: 0.3675
+Epoch 5 finished. t = 0:02:14.633864
+
+
+Epoch 6 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 6 Batch 0/650 Loss: 0.04023425653576851, 	PPG F1: 0.9788135593220338, 	Batch Avg-T: 0:00:01.726221
+	[TRAIN] Epoch 6 Batch 100/650 Loss: 0.048553593272324835, 	PPG F1: 0.9736483489924069, 	Batch Avg-T: 0:00:00.209191
+	[TRAIN] Epoch 6 Batch 200/650 Loss: 0.047255349563277184, 	PPG F1: 0.9745084435310808, 	Batch Avg-T: 0:00:00.201876
+	[TRAIN] Epoch 6 Batch 300/650 Loss: 0.04600155478547578, 	PPG F1: 0.9751559977621733, 	Batch Avg-T: 0:00:00.199434
+	[TRAIN] Epoch 6 Batch 400/650 Loss: 0.0458610487864945, 	PPG F1: 0.9752798520582707, 	Batch Avg-T: 0:00:00.198246
+	[TRAIN] Epoch 6 Batch 500/650 Loss: 0.04540579885749998, 	PPG F1: 0.9755777759694755, 	Batch Avg-T: 0:00:00.197553
+	[TRAIN] Epoch 6 Batch 600/650 Loss: 0.04509719284235836, 	PPG F1: 0.9757666214547203, 	Batch Avg-T: 0:00:00.197097
+[TRAIN] Epoch 6 Loss: 0.0446385062371309,             	PPG F1: 0.9760154212157136
+Time - 0:02:08.075745
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3628
+[VAL] 	PPG ROC AUC: 0.8829
+[VAL] 	PPG PR  AUC: 0.4376
+Epoch 6 finished. t = 0:02:14.713866
+
+
+Epoch 7 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 7 Batch 0/650 Loss: 0.038508228957653046, 	PPG F1: 0.9788182831661092, 	Batch Avg-T: 0:00:01.649265
+	[TRAIN] Epoch 7 Batch 100/650 Loss: 0.03872527360989906, 	PPG F1: 0.9794195136684181, 	Batch Avg-T: 0:00:00.208570
+	[TRAIN] Epoch 7 Batch 200/650 Loss: 0.04004749156238131, 	PPG F1: 0.978704870240214, 	Batch Avg-T: 0:00:00.201618
+	[TRAIN] Epoch 7 Batch 300/650 Loss: 0.03951274461895723, 	PPG F1: 0.9790324191522801, 	Batch Avg-T: 0:00:00.199293
+	[TRAIN] Epoch 7 Batch 400/650 Loss: 0.03920132205113211, 	PPG F1: 0.9792097376560162, 	Batch Avg-T: 0:00:00.198153
+	[TRAIN] Epoch 7 Batch 500/650 Loss: 0.03944596281264, 	PPG F1: 0.9789056019068954, 	Batch Avg-T: 0:00:00.197484
+	[TRAIN] Epoch 7 Batch 600/650 Loss: 0.038558012875612085, 	PPG F1: 0.9793813730242079, 	Batch Avg-T: 0:00:00.197057
+[TRAIN] Epoch 7 Loss: 0.03845600255693381,             	PPG F1: 0.9793692367765526
+Time - 0:02:08.052155
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3385
+[VAL] 	PPG ROC AUC: 0.8896
+[VAL] 	PPG PR  AUC: 0.4502
+Epoch 7 finished. t = 0:02:14.573020
+
+
+Epoch 8 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 8 Batch 0/650 Loss: 0.06191987544298172, 	PPG F1: 0.966887417218543, 	Batch Avg-T: 0:00:01.698128
+	[TRAIN] Epoch 8 Batch 100/650 Loss: 0.03586901224559486, 	PPG F1: 0.9809071778242177, 	Batch Avg-T: 0:00:00.209200
+	[TRAIN] Epoch 8 Batch 200/650 Loss: 0.03189109976111508, 	PPG F1: 0.9830434044427359, 	Batch Avg-T: 0:00:00.201923
+	[TRAIN] Epoch 8 Batch 300/650 Loss: 0.031471518016856576, 	PPG F1: 0.9833514989450802, 	Batch Avg-T: 0:00:00.199504
+	[TRAIN] Epoch 8 Batch 400/650 Loss: 0.031269006700512775, 	PPG F1: 0.9834110768639042, 	Batch Avg-T: 0:00:00.198334
+	[TRAIN] Epoch 8 Batch 500/650 Loss: 0.03109380728500094, 	PPG F1: 0.983548003568339, 	Batch Avg-T: 0:00:00.197637
+	[TRAIN] Epoch 8 Batch 600/650 Loss: 0.03019673749029686, 	PPG F1: 0.9840377288520684, 	Batch Avg-T: 0:00:00.197189
+[TRAIN] Epoch 8 Loss: 0.030119281997187778,             	PPG F1: 0.9840804387881733
+Time - 0:02:08.128071
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3958
+[VAL] 	PPG ROC AUC: 0.8493
+[VAL] 	PPG PR  AUC: 0.4241
+Epoch 8 finished. t = 0:02:14.698108
+
+
+Epoch 9 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 9 Batch 0/650 Loss: 0.0322892852127552, 	PPG F1: 0.9820485744456178, 	Batch Avg-T: 0:00:01.602678
+	[TRAIN] Epoch 9 Batch 100/650 Loss: 0.02526916050822428, 	PPG F1: 0.9869044193705099, 	Batch Avg-T: 0:00:00.208216
+	[TRAIN] Epoch 9 Batch 200/650 Loss: 0.027649933875385505, 	PPG F1: 0.9854379421140959, 	Batch Avg-T: 0:00:00.201448
+	[TRAIN] Epoch 9 Batch 300/650 Loss: 0.02765746240463863, 	PPG F1: 0.9853697327007391, 	Batch Avg-T: 0:00:00.199196
+	[TRAIN] Epoch 9 Batch 400/650 Loss: 0.026983307783684678, 	PPG F1: 0.9857646032894604, 	Batch Avg-T: 0:00:00.198122
+	[TRAIN] Epoch 9 Batch 500/650 Loss: 0.027109031916824643, 	PPG F1: 0.9856861700773606, 	Batch Avg-T: 0:00:00.197486
+	[TRAIN] Epoch 9 Batch 600/650 Loss: 0.026525046385068463, 	PPG F1: 0.9860015717864332, 	Batch Avg-T: 0:00:00.197066
+[TRAIN] Epoch 9 Loss: 0.026414340330431094,             	PPG F1: 0.9860878706736099
+Time - 0:02:08.059361
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3926
+[VAL] 	PPG ROC AUC: 0.8969
+[VAL] 	PPG PR  AUC: 0.4876
+Epoch 9 finished. t = 0:02:14.556542
+
+
+Epoch 10 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 10 Batch 0/650 Loss: 0.016594570130109787, 	PPG F1: 0.9899665551839465, 	Batch Avg-T: 0:00:01.646171
+	[TRAIN] Epoch 10 Batch 100/650 Loss: 0.020813732435650163, 	PPG F1: 0.9889695699876028, 	Batch Avg-T: 0:00:00.208557
+	[TRAIN] Epoch 10 Batch 200/650 Loss: 0.021393793954778074, 	PPG F1: 0.9888992630271026, 	Batch Avg-T: 0:00:00.201572
+	[TRAIN] Epoch 10 Batch 300/650 Loss: 0.021276771007384176, 	PPG F1: 0.9890374911669296, 	Batch Avg-T: 0:00:00.199270
+	[TRAIN] Epoch 10 Batch 400/650 Loss: 0.021172095106408335, 	PPG F1: 0.9889985226333152, 	Batch Avg-T: 0:00:00.198180
+	[TRAIN] Epoch 10 Batch 500/650 Loss: 0.020981247683693312, 	PPG F1: 0.9891136274460319, 	Batch Avg-T: 0:00:00.197528
+	[TRAIN] Epoch 10 Batch 600/650 Loss: 0.020913237213821906, 	PPG F1: 0.9891745157746171, 	Batch Avg-T: 0:00:00.197109
+[TRAIN] Epoch 10 Loss: 0.0211412444159102,             	PPG F1: 0.9890945383376764
+Time - 0:02:08.075606
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3494
+[VAL] 	PPG ROC AUC: 0.8713
+[VAL] 	PPG PR  AUC: 0.4335
+Epoch 10 finished. t = 0:02:14.598340
+
+
+Epoch 11 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 11 Batch 0/650 Loss: 0.015492415055632591, 	PPG F1: 0.9945828819068254, 	Batch Avg-T: 0:00:01.679087
+	[TRAIN] Epoch 11 Batch 100/650 Loss: 0.017446182986334113, 	PPG F1: 0.9911080616145423, 	Batch Avg-T: 0:00:00.209020
+	[TRAIN] Epoch 11 Batch 200/650 Loss: 0.017865582700559303, 	PPG F1: 0.9906614914955449, 	Batch Avg-T: 0:00:00.201916
+	[TRAIN] Epoch 11 Batch 300/650 Loss: 0.0182259463429748, 	PPG F1: 0.9904329272548157, 	Batch Avg-T: 0:00:00.199522
+	[TRAIN] Epoch 11 Batch 400/650 Loss: 0.01908891161258084, 	PPG F1: 0.989890905139354, 	Batch Avg-T: 0:00:00.198361
+	[TRAIN] Epoch 11 Batch 500/650 Loss: 0.01848986289443489, 	PPG F1: 0.990276649912804, 	Batch Avg-T: 0:00:00.197691
+	[TRAIN] Epoch 11 Batch 600/650 Loss: 0.018428809592150115, 	PPG F1: 0.9903820357189218, 	Batch Avg-T: 0:00:00.197239
+[TRAIN] Epoch 11 Loss: 0.018382765339830746,             	PPG F1: 0.990408978544376
+Time - 0:02:08.164568
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3411
+[VAL] 	PPG ROC AUC: 0.8605
+[VAL] 	PPG PR  AUC: 0.4015
+Epoch 11 finished. t = 0:02:14.774246
+
+
+Epoch 12 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 12 Batch 0/650 Loss: 0.014077268540859222, 	PPG F1: 0.993801652892562, 	Batch Avg-T: 0:00:01.633024
+	[TRAIN] Epoch 12 Batch 100/650 Loss: 0.01567272999609756, 	PPG F1: 0.9915547844259127, 	Batch Avg-T: 0:00:00.208375
+	[TRAIN] Epoch 12 Batch 200/650 Loss: 0.015383187885308148, 	PPG F1: 0.9918517675976743, 	Batch Avg-T: 0:00:00.201584
+	[TRAIN] Epoch 12 Batch 300/650 Loss: 0.016232448908503467, 	PPG F1: 0.9914201722180513, 	Batch Avg-T: 0:00:00.199299
+	[TRAIN] Epoch 12 Batch 400/650 Loss: 0.01633427470824925, 	PPG F1: 0.9914453756564922, 	Batch Avg-T: 0:00:00.198201
+	[TRAIN] Epoch 12 Batch 500/650 Loss: 0.017939159326894792, 	PPG F1: 0.9907281981073763, 	Batch Avg-T: 0:00:00.197541
+	[TRAIN] Epoch 12 Batch 600/650 Loss: 0.01714091739166348, 	PPG F1: 0.9911642611196687, 	Batch Avg-T: 0:00:00.197101
+[TRAIN] Epoch 12 Loss: 0.016974175850359294,             	PPG F1: 0.9912419441958101
+Time - 0:02:08.068270
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3907
+[VAL] 	PPG ROC AUC: 0.8811
+[VAL] 	PPG PR  AUC: 0.4543
+Epoch 12 finished. t = 0:02:14.703619
+
+
+Epoch 13 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 13 Batch 0/650 Loss: 0.00779243279248476, 	PPG F1: 0.9967213114754099, 	Batch Avg-T: 0:00:01.723561
+	[TRAIN] Epoch 13 Batch 100/650 Loss: 0.013718957985096638, 	PPG F1: 0.9927573352387109, 	Batch Avg-T: 0:00:00.209150
+	[TRAIN] Epoch 13 Batch 200/650 Loss: 0.0158533621208733, 	PPG F1: 0.9915965819685806, 	Batch Avg-T: 0:00:00.201852
+	[TRAIN] Epoch 13 Batch 300/650 Loss: 0.014459337353817747, 	PPG F1: 0.9924203135457386, 	Batch Avg-T: 0:00:00.199441
+	[TRAIN] Epoch 13 Batch 400/650 Loss: 0.013977875884278606, 	PPG F1: 0.9927495866899816, 	Batch Avg-T: 0:00:00.198252
+	[TRAIN] Epoch 13 Batch 500/650 Loss: 0.014365230396969946, 	PPG F1: 0.9925251537900275, 	Batch Avg-T: 0:00:00.197562
+	[TRAIN] Epoch 13 Batch 600/650 Loss: 0.014389245928933042, 	PPG F1: 0.9925034581952125, 	Batch Avg-T: 0:00:00.197110
+[TRAIN] Epoch 13 Loss: 0.01406932667005234,             	PPG F1: 0.9926972856606092
+Time - 0:02:08.084891
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3898
+[VAL] 	PPG ROC AUC: 0.8918
+[VAL] 	PPG PR  AUC: 0.473
+Epoch 13 finished. t = 0:02:14.605309
+
+
+Epoch 14 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 14 Batch 0/650 Loss: 0.005485198926180601, 	PPG F1: 0.9967707212055975, 	Batch Avg-T: 0:00:01.684673
+	[TRAIN] Epoch 14 Batch 100/650 Loss: 0.012552166848655531, 	PPG F1: 0.993342844696772, 	Batch Avg-T: 0:00:00.208909
+	[TRAIN] Epoch 14 Batch 200/650 Loss: 0.011625722268438754, 	PPG F1: 0.9938830027296545, 	Batch Avg-T: 0:00:00.201739
+	[TRAIN] Epoch 14 Batch 300/650 Loss: 0.012269574231421729, 	PPG F1: 0.9935576611116349, 	Batch Avg-T: 0:00:00.199398
+	[TRAIN] Epoch 14 Batch 400/650 Loss: 0.01302473159841357, 	PPG F1: 0.9933298077785023, 	Batch Avg-T: 0:00:00.198229
+	[TRAIN] Epoch 14 Batch 500/650 Loss: 0.012602153572043823, 	PPG F1: 0.9935477707042887, 	Batch Avg-T: 0:00:00.197552
+	[TRAIN] Epoch 14 Batch 600/650 Loss: 0.012351461744692158, 	PPG F1: 0.9936735177811903, 	Batch Avg-T: 0:00:00.197084
+[TRAIN] Epoch 14 Loss: 0.012233075300016655,             	PPG F1: 0.9936950553685681
+Time - 0:02:08.102659
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3326
+[VAL] 	PPG ROC AUC: 0.8546
+[VAL] 	PPG PR  AUC: 0.4216
+Epoch 14 finished. t = 0:02:14.753243
+
+
+Epoch 15 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 15 Batch 0/650 Loss: 0.00558053981512785, 	PPG F1: 0.9989847715736041, 	Batch Avg-T: 0:00:01.612978
+	[TRAIN] Epoch 15 Batch 100/650 Loss: 0.009856972322421203, 	PPG F1: 0.9951942285859635, 	Batch Avg-T: 0:00:00.208979
+	[TRAIN] Epoch 15 Batch 200/650 Loss: 0.009816929502227338, 	PPG F1: 0.9950343039253173, 	Batch Avg-T: 0:00:00.202061
+	[TRAIN] Epoch 15 Batch 300/650 Loss: 0.00970758073901343, 	PPG F1: 0.9950739558329387, 	Batch Avg-T: 0:00:00.199705
+	[TRAIN] Epoch 15 Batch 400/650 Loss: 0.010124521660955246, 	PPG F1: 0.9948513792998499, 	Batch Avg-T: 0:00:00.198559
+	[TRAIN] Epoch 15 Batch 500/650 Loss: 0.010100826833902779, 	PPG F1: 0.9948725239601135, 	Batch Avg-T: 0:00:00.197855
+	[TRAIN] Epoch 15 Batch 600/650 Loss: 0.010231875458859317, 	PPG F1: 0.994837233974233, 	Batch Avg-T: 0:00:00.197386
+[TRAIN] Epoch 15 Loss: 0.010226364018252262,             	PPG F1: 0.9948206890597161
+Time - 0:02:08.248446
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3972
+[VAL] 	PPG ROC AUC: 0.8787
+[VAL] 	PPG PR  AUC: 0.5043
+Epoch 15 finished. t = 0:02:14.770245
+
+
+Epoch 16 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 16 Batch 0/650 Loss: 0.003852826775982976, 	PPG F1: 0.9967567567567568, 	Batch Avg-T: 0:00:01.622829
+	[TRAIN] Epoch 16 Batch 100/650 Loss: 0.008110926939534153, 	PPG F1: 0.9958121383512948, 	Batch Avg-T: 0:00:00.208854
+	[TRAIN] Epoch 16 Batch 200/650 Loss: 0.010660852982653351, 	PPG F1: 0.9946778542410402, 	Batch Avg-T: 0:00:00.201877
+	[TRAIN] Epoch 16 Batch 300/650 Loss: 0.010618068036883203, 	PPG F1: 0.9946997369716746, 	Batch Avg-T: 0:00:00.199573
+	[TRAIN] Epoch 16 Batch 400/650 Loss: 0.010508300779222457, 	PPG F1: 0.9947228053282895, 	Batch Avg-T: 0:00:00.198397
+	[TRAIN] Epoch 16 Batch 500/650 Loss: 0.010227078734804131, 	PPG F1: 0.9948725603724101, 	Batch Avg-T: 0:00:00.197696
+	[TRAIN] Epoch 16 Batch 600/650 Loss: 0.010213791052407946, 	PPG F1: 0.9948296095075602, 	Batch Avg-T: 0:00:00.197226
+[TRAIN] Epoch 16 Loss: 0.010064913032827182,             	PPG F1: 0.9948936736631535
+Time - 0:02:08.151520
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4441
+[VAL] 	PPG ROC AUC: 0.9156
+[VAL] 	PPG PR  AUC: 0.5536
+Epoch 16 finished. t = 0:02:14.627015
+
+
+Epoch 17 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 17 Batch 0/650 Loss: 0.0022769388742744923, 	PPG F1: 0.9988465974625144, 	Batch Avg-T: 0:00:01.588349
+	[TRAIN] Epoch 17 Batch 100/650 Loss: 0.012623080392460347, 	PPG F1: 0.9938642955952685, 	Batch Avg-T: 0:00:00.208532
+	[TRAIN] Epoch 17 Batch 200/650 Loss: 0.01105827316630224, 	PPG F1: 0.9947044955188863, 	Batch Avg-T: 0:00:00.201711
+	[TRAIN] Epoch 17 Batch 300/650 Loss: 0.009742942259281849, 	PPG F1: 0.9951785983057516, 	Batch Avg-T: 0:00:00.199437
+	[TRAIN] Epoch 17 Batch 400/650 Loss: 0.010287537781795733, 	PPG F1: 0.9948269749983335, 	Batch Avg-T: 0:00:00.198324
+	[TRAIN] Epoch 17 Batch 500/650 Loss: 0.009506297531071121, 	PPG F1: 0.9952355399518789, 	Batch Avg-T: 0:00:00.197641
+	[TRAIN] Epoch 17 Batch 600/650 Loss: 0.009193313844035536, 	PPG F1: 0.9954138707958488, 	Batch Avg-T: 0:00:00.197186
+[TRAIN] Epoch 17 Loss: 0.00910208606411918,             	PPG F1: 0.9954663826820604
+Time - 0:02:08.131666
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3703
+[VAL] 	PPG ROC AUC: 0.8746
+[VAL] 	PPG PR  AUC: 0.4623
+Epoch 17 finished. t = 0:02:14.618431
+
+
+Epoch 18 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 18 Batch 0/650 Loss: 0.004304491449147463, 	PPG F1: 0.9967567567567569, 	Batch Avg-T: 0:00:01.588725
+	[TRAIN] Epoch 18 Batch 100/650 Loss: 0.009192476938893595, 	PPG F1: 0.9952229932252136, 	Batch Avg-T: 0:00:00.208573
+	[TRAIN] Epoch 18 Batch 200/650 Loss: 0.00850326621346639, 	PPG F1: 0.9955972329463029, 	Batch Avg-T: 0:00:00.201771
+	[TRAIN] Epoch 18 Batch 300/650 Loss: 0.008677926372452035, 	PPG F1: 0.9954174534553264, 	Batch Avg-T: 0:00:00.199454
+	[TRAIN] Epoch 18 Batch 400/650 Loss: 0.008570237020483505, 	PPG F1: 0.9954987210624547, 	Batch Avg-T: 0:00:00.198324
+	[TRAIN] Epoch 18 Batch 500/650 Loss: 0.008216329850372626, 	PPG F1: 0.9957029411767147, 	Batch Avg-T: 0:00:00.197655
+	[TRAIN] Epoch 18 Batch 600/650 Loss: 0.00824687193400039, 	PPG F1: 0.9956779445949553, 	Batch Avg-T: 0:00:00.197215
+[TRAIN] Epoch 18 Loss: 0.008119801171571732,             	PPG F1: 0.9957543349881177
+Time - 0:02:08.154160
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4074
+[VAL] 	PPG ROC AUC: 0.8909
+[VAL] 	PPG PR  AUC: 0.4939
+Epoch 18 finished. t = 0:02:14.674650
+
+
+Epoch 19 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 19 Batch 0/650 Loss: 0.0036983743775635958, 	PPG F1: 0.9978260869565216, 	Batch Avg-T: 0:00:01.553011
+	[TRAIN] Epoch 19 Batch 100/650 Loss: 0.010322309401126044, 	PPG F1: 0.9948919529731282, 	Batch Avg-T: 0:00:00.208385
+	[TRAIN] Epoch 19 Batch 200/650 Loss: 0.009086757993895505, 	PPG F1: 0.9955085785476265, 	Batch Avg-T: 0:00:00.201781
+	[TRAIN] Epoch 19 Batch 300/650 Loss: 0.008074812876699535, 	PPG F1: 0.9959980633273089, 	Batch Avg-T: 0:00:00.199510
+	[TRAIN] Epoch 19 Batch 400/650 Loss: 0.008069392248257725, 	PPG F1: 0.9960064646201358, 	Batch Avg-T: 0:00:00.198396
+	[TRAIN] Epoch 19 Batch 500/650 Loss: 0.007742274676086177, 	PPG F1: 0.9960882889254123, 	Batch Avg-T: 0:00:00.197721
+	[TRAIN] Epoch 19 Batch 600/650 Loss: 0.008030700505949005, 	PPG F1: 0.9958681127005571, 	Batch Avg-T: 0:00:00.197281
+[TRAIN] Epoch 19 Loss: 0.00787181280222005,             	PPG F1: 0.9959554893152839
+Time - 0:02:08.194041
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.382
+[VAL] 	PPG ROC AUC: 0.8955
+[VAL] 	PPG PR  AUC: 0.5464
+Epoch 19 finished. t = 0:02:14.782753
+
+
+Epoch 20 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 20 Batch 0/650 Loss: 0.008057825267314911, 	PPG F1: 0.9953488372093023, 	Batch Avg-T: 0:00:01.576070
+	[TRAIN] Epoch 20 Batch 100/650 Loss: 0.007671400847024109, 	PPG F1: 0.9961673088913894, 	Batch Avg-T: 0:00:00.208463
+	[TRAIN] Epoch 20 Batch 200/650 Loss: 0.006666169159690066, 	PPG F1: 0.9966696018503493, 	Batch Avg-T: 0:00:00.201698
+	[TRAIN] Epoch 20 Batch 300/650 Loss: 0.007349461134994229, 	PPG F1: 0.996352065569196, 	Batch Avg-T: 0:00:00.199465
+	[TRAIN] Epoch 20 Batch 400/650 Loss: 0.006659904989501591, 	PPG F1: 0.9966833265240878, 	Batch Avg-T: 0:00:00.198326
+	[TRAIN] Epoch 20 Batch 500/650 Loss: 0.006974274304148438, 	PPG F1: 0.9964804369049289, 	Batch Avg-T: 0:00:00.197653
+	[TRAIN] Epoch 20 Batch 600/650 Loss: 0.006900985649728391, 	PPG F1: 0.9965101103809486, 	Batch Avg-T: 0:00:00.197199
+[TRAIN] Epoch 20 Loss: 0.007049212086489066,             	PPG F1: 0.9964296336666346
+Time - 0:02:08.137254
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4226
+[VAL] 	PPG ROC AUC: 0.9149
+[VAL] 	PPG PR  AUC: 0.5516
+Epoch 20 finished. t = 0:02:14.641271
+
+
+Epoch 21 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 21 Batch 0/650 Loss: 0.01636476255953312, 	PPG F1: 0.9893842887473461, 	Batch Avg-T: 0:00:01.587959
+	[TRAIN] Epoch 21 Batch 100/650 Loss: 0.0071008120972368095, 	PPG F1: 0.9962571349519223, 	Batch Avg-T: 0:00:00.208690
+	[TRAIN] Epoch 21 Batch 200/650 Loss: 0.006405343384996279, 	PPG F1: 0.9967073314980041, 	Batch Avg-T: 0:00:00.201819
+	[TRAIN] Epoch 21 Batch 300/650 Loss: 0.006171259342961978, 	PPG F1: 0.9968509440723234, 	Batch Avg-T: 0:00:00.199529
+	[TRAIN] Epoch 21 Batch 400/650 Loss: 0.006602372834226697, 	PPG F1: 0.9966497236939735, 	Batch Avg-T: 0:00:00.198406
+	[TRAIN] Epoch 21 Batch 500/650 Loss: 0.00658924230748505, 	PPG F1: 0.9966151999637411, 	Batch Avg-T: 0:00:00.197712
+	[TRAIN] Epoch 21 Batch 600/650 Loss: 0.006434006751387128, 	PPG F1: 0.9967102974874584, 	Batch Avg-T: 0:00:00.197252
+[TRAIN] Epoch 21 Loss: 0.0064863121912528115,             	PPG F1: 0.9967021427889168
+Time - 0:02:08.176125
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4382
+[VAL] 	PPG ROC AUC: 0.9126
+[VAL] 	PPG PR  AUC: 0.5499
+Epoch 21 finished. t = 0:02:14.625699
+
+
+Epoch 22 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 22 Batch 0/650 Loss: 0.006848555989563465, 	PPG F1: 0.9948717948717949, 	Batch Avg-T: 0:00:01.645475
+	[TRAIN] Epoch 22 Batch 100/650 Loss: 0.004907664137495922, 	PPG F1: 0.9974624760792711, 	Batch Avg-T: 0:00:00.209289
+	[TRAIN] Epoch 22 Batch 200/650 Loss: 0.005662187046906564, 	PPG F1: 0.9970523544876858, 	Batch Avg-T: 0:00:00.202126
+	[TRAIN] Epoch 22 Batch 300/650 Loss: 0.005643139464801573, 	PPG F1: 0.9970644447647818, 	Batch Avg-T: 0:00:00.199692
+	[TRAIN] Epoch 22 Batch 400/650 Loss: 0.0053832641259988915, 	PPG F1: 0.9972144227766367, 	Batch Avg-T: 0:00:00.198525
+	[TRAIN] Epoch 22 Batch 500/650 Loss: 0.005784567122005146, 	PPG F1: 0.997029108008268, 	Batch Avg-T: 0:00:00.197794
+	[TRAIN] Epoch 22 Batch 600/650 Loss: 0.005805097274687963, 	PPG F1: 0.9970372313175117, 	Batch Avg-T: 0:00:00.197331
+[TRAIN] Epoch 22 Loss: 0.005870249135589872,             	PPG F1: 0.9970140019580745
+Time - 0:02:08.228274
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3443
+[VAL] 	PPG ROC AUC: 0.8561
+[VAL] 	PPG PR  AUC: 0.4716
+Epoch 22 finished. t = 0:02:14.855597
+
+
+Epoch 23 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 23 Batch 0/650 Loss: 0.001137724844738841, 	PPG F1: 1.0, 	Batch Avg-T: 0:00:01.706678
+	[TRAIN] Epoch 23 Batch 100/650 Loss: 0.0060398002785612085, 	PPG F1: 0.9969747479415877, 	Batch Avg-T: 0:00:00.209818
+	[TRAIN] Epoch 23 Batch 200/650 Loss: 0.005724735941450617, 	PPG F1: 0.997255143345853, 	Batch Avg-T: 0:00:00.202453
+	[TRAIN] Epoch 23 Batch 300/650 Loss: 0.005983989400827045, 	PPG F1: 0.997085078336979, 	Batch Avg-T: 0:00:00.199972
+	[TRAIN] Epoch 23 Batch 400/650 Loss: 0.0060544519322608455, 	PPG F1: 0.9970500098901075, 	Batch Avg-T: 0:00:00.198750
+	[TRAIN] Epoch 23 Batch 500/650 Loss: 0.005620142305897225, 	PPG F1: 0.9972645933855482, 	Batch Avg-T: 0:00:00.198004
+	[TRAIN] Epoch 23 Batch 600/650 Loss: 0.006133805417952386, 	PPG F1: 0.9969734315949328, 	Batch Avg-T: 0:00:00.197499
+[TRAIN] Epoch 23 Loss: 0.006245954681205778,             	PPG F1: 0.9969247610658892
+Time - 0:02:08.322344
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4366
+[VAL] 	PPG ROC AUC: 0.9122
+[VAL] 	PPG PR  AUC: 0.5132
+Epoch 23 finished. t = 0:02:14.854506
+
+
+Epoch 24 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 24 Batch 0/650 Loss: 0.00552458455786109, 	PPG F1: 0.9967497291440953, 	Batch Avg-T: 0:00:01.468792
+	[TRAIN] Epoch 24 Batch 100/650 Loss: 0.004508158449074345, 	PPG F1: 0.9976814170055418, 	Batch Avg-T: 0:00:00.207574
+	[TRAIN] Epoch 24 Batch 200/650 Loss: 0.006335652917096465, 	PPG F1: 0.9968711007551225, 	Batch Avg-T: 0:00:00.201312
+	[TRAIN] Epoch 24 Batch 300/650 Loss: 0.005339698845608024, 	PPG F1: 0.9973740384669595, 	Batch Avg-T: 0:00:00.199202
+	[TRAIN] Epoch 24 Batch 400/650 Loss: 0.005417941484563726, 	PPG F1: 0.9973206251607282, 	Batch Avg-T: 0:00:00.198140
+	[TRAIN] Epoch 24 Batch 500/650 Loss: 0.005602726006604816, 	PPG F1: 0.9972086281864323, 	Batch Avg-T: 0:00:00.197513
+	[TRAIN] Epoch 24 Batch 600/650 Loss: 0.005911470630853909, 	PPG F1: 0.9970324250308861, 	Batch Avg-T: 0:00:00.197107
+[TRAIN] Epoch 24 Loss: 0.005696834435758109,             	PPG F1: 0.9971306869910345
+Time - 0:02:08.079947
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4142
+[VAL] 	PPG ROC AUC: 0.8993
+[VAL] 	PPG PR  AUC: 0.5304
+Epoch 24 finished. t = 0:02:14.646979
+
+
+Epoch 25 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 25 Batch 0/650 Loss: 0.0018459910061210394, 	PPG F1: 0.9989212513484358, 	Batch Avg-T: 0:00:01.721037
+	[TRAIN] Epoch 25 Batch 100/650 Loss: 0.005305690546220371, 	PPG F1: 0.9973401216737002, 	Batch Avg-T: 0:00:00.210249
+	[TRAIN] Epoch 25 Batch 200/650 Loss: 0.0056852022691546425, 	PPG F1: 0.9971903208010878, 	Batch Avg-T: 0:00:00.202720
+	[TRAIN] Epoch 25 Batch 300/650 Loss: 0.004898630555617032, 	PPG F1: 0.9975978554909141, 	Batch Avg-T: 0:00:00.200189
+	[TRAIN] Epoch 25 Batch 400/650 Loss: 0.005042149071747721, 	PPG F1: 0.997482451266572, 	Batch Avg-T: 0:00:00.198922
+	[TRAIN] Epoch 25 Batch 500/650 Loss: 0.004924810861893549, 	PPG F1: 0.9975837044244451, 	Batch Avg-T: 0:00:00.198156
+	[TRAIN] Epoch 25 Batch 600/650 Loss: 0.005065306650200384, 	PPG F1: 0.9975043765498872, 	Batch Avg-T: 0:00:00.197646
+[TRAIN] Epoch 25 Loss: 0.0050262882067069695,             	PPG F1: 0.9975333651391642
+Time - 0:02:08.417971
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4439
+[VAL] 	PPG ROC AUC: 0.9137
+[VAL] 	PPG PR  AUC: 0.5381
+Epoch 25 finished. t = 0:02:15.003056
+
+
+Epoch 26 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 26 Batch 0/650 Loss: 0.0016486129024997354, 	PPG F1: 1.0, 	Batch Avg-T: 0:00:01.722262
+	[TRAIN] Epoch 26 Batch 100/650 Loss: 0.005671813046688786, 	PPG F1: 0.9972016731096012, 	Batch Avg-T: 0:00:00.209997
+	[TRAIN] Epoch 26 Batch 200/650 Loss: 0.006501667646691783, 	PPG F1: 0.9967538821661163, 	Batch Avg-T: 0:00:00.202530
+	[TRAIN] Epoch 26 Batch 300/650 Loss: 0.005896029638699287, 	PPG F1: 0.9970809772307329, 	Batch Avg-T: 0:00:00.200001
+	[TRAIN] Epoch 26 Batch 400/650 Loss: 0.0055575511624622615, 	PPG F1: 0.9972359202735697, 	Batch Avg-T: 0:00:00.198712
+	[TRAIN] Epoch 26 Batch 500/650 Loss: 0.005892047133328563, 	PPG F1: 0.9970658480129545, 	Batch Avg-T: 0:00:00.197954
+	[TRAIN] Epoch 26 Batch 600/650 Loss: 0.005714204992205811, 	PPG F1: 0.9971400723717592, 	Batch Avg-T: 0:00:00.197473
+[TRAIN] Epoch 26 Loss: 0.005497412770346273,             	PPG F1: 0.9972495476641265
+Time - 0:02:08.305653
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3917
+[VAL] 	PPG ROC AUC: 0.8952
+[VAL] 	PPG PR  AUC: 0.5179
+Epoch 26 finished. t = 0:02:14.822231
+
+
+Epoch 27 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 27 Batch 0/650 Loss: 0.002579647582024336, 	PPG F1: 0.9988649262202043, 	Batch Avg-T: 0:00:01.638724
+	[TRAIN] Epoch 27 Batch 100/650 Loss: 0.005318667479712369, 	PPG F1: 0.9972121484746261, 	Batch Avg-T: 0:00:00.209178
+	[TRAIN] Epoch 27 Batch 200/650 Loss: 0.005234952998956878, 	PPG F1: 0.9972944389248836, 	Batch Avg-T: 0:00:00.202084
+	[TRAIN] Epoch 27 Batch 300/650 Loss: 0.0049481106876779314, 	PPG F1: 0.9974845772420008, 	Batch Avg-T: 0:00:00.199700
+	[TRAIN] Epoch 27 Batch 400/650 Loss: 0.004804774511639178, 	PPG F1: 0.9975939922264757, 	Batch Avg-T: 0:00:00.198517
+	[TRAIN] Epoch 27 Batch 500/650 Loss: 0.004608656186854444, 	PPG F1: 0.9976915109384517, 	Batch Avg-T: 0:00:00.197802
+	[TRAIN] Epoch 27 Batch 600/650 Loss: 0.00471371144270168, 	PPG F1: 0.9976348144204221, 	Batch Avg-T: 0:00:00.197339
+[TRAIN] Epoch 27 Loss: 0.0048352366211251,             	PPG F1: 0.9975711300293649
+Time - 0:02:08.223257
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.3835
+[VAL] 	PPG ROC AUC: 0.8805
+[VAL] 	PPG PR  AUC: 0.4886
+Epoch 27 finished. t = 0:02:14.719022
+
+
+Epoch 28 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 28 Batch 0/650 Loss: 0.0006470508524216712, 	PPG F1: 1.0, 	Batch Avg-T: 0:00:01.552653
+	[TRAIN] Epoch 28 Batch 100/650 Loss: 0.0034161202046480766, 	PPG F1: 0.9983124324666702, 	Batch Avg-T: 0:00:00.208558
+	[TRAIN] Epoch 28 Batch 200/650 Loss: 0.003163529512983867, 	PPG F1: 0.9984310011954174, 	Batch Avg-T: 0:00:00.201899
+	[TRAIN] Epoch 28 Batch 300/650 Loss: 0.0033767128870779944, 	PPG F1: 0.9983271303328206, 	Batch Avg-T: 0:00:00.199781
+	[TRAIN] Epoch 28 Batch 400/650 Loss: 0.0049217738819141935, 	PPG F1: 0.9976410728985431, 	Batch Avg-T: 0:00:00.198695
+	[TRAIN] Epoch 28 Batch 500/650 Loss: 0.004750843218555851, 	PPG F1: 0.9977103655211083, 	Batch Avg-T: 0:00:00.198004
+	[TRAIN] Epoch 28 Batch 600/650 Loss: 0.004547745320215138, 	PPG F1: 0.9978095593003607, 	Batch Avg-T: 0:00:00.197542
+[TRAIN] Epoch 28 Loss: 0.004511376330158853,             	PPG F1: 0.9978260048025044
+Time - 0:02:08.354985
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.455
+[VAL] 	PPG ROC AUC: 0.9093
+[VAL] 	PPG PR  AUC: 0.5541
+Epoch 28 finished. t = 0:02:14.865607
+
+
+Epoch 29 training...
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+	[TRAIN] Epoch 29 Batch 0/650 Loss: 0.0031830675434321165, 	PPG F1: 0.9967284623773174, 	Batch Avg-T: 0:00:01.603836
+	[TRAIN] Epoch 29 Batch 100/650 Loss: 0.004798951166299273, 	PPG F1: 0.9976523794816629, 	Batch Avg-T: 0:00:00.208772
+	[TRAIN] Epoch 29 Batch 200/650 Loss: 0.004307991620448571, 	PPG F1: 0.9978664872459035, 	Batch Avg-T: 0:00:00.201885
+	[TRAIN] Epoch 29 Batch 300/650 Loss: 0.0038102746719147922, 	PPG F1: 0.9981165111123037, 	Batch Avg-T: 0:00:00.199599
+	[TRAIN] Epoch 29 Batch 400/650 Loss: 0.004238372821037999, 	PPG F1: 0.9978935797428126, 	Batch Avg-T: 0:00:00.198490
+	[TRAIN] Epoch 29 Batch 500/650 Loss: 0.004150994996711735, 	PPG F1: 0.997932480322752, 	Batch Avg-T: 0:00:00.197785
+	[TRAIN] Epoch 29 Batch 600/650 Loss: 0.004184565928856843, 	PPG F1: 0.9978925880953264, 	Batch Avg-T: 0:00:00.197319
+[TRAIN] Epoch 29 Loss: 0.004101557216221968,             	PPG F1: 0.9979375681109367
+Time - 0:02:08.222509
+/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+[VAL] 	PPG      F1: 0.4141
+[VAL] 	PPG ROC AUC: 0.9207
+[VAL] 	PPG PR  AUC: 0.5593
+Epoch 29 finished. t = 0:02:14.803865
+
+
