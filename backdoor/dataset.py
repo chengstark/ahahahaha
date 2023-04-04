@@ -19,10 +19,11 @@ np.random.seed(1)
 
 
 class Dataset_ori():
-    def __init__(self,data_path,label_path):
+    def __init__(self,data_path,label_path, selected_class=None):
         # self.root = root
         self.data_path = data_path
         self.label_path = label_path
+        self.selected_class = selected_class
         self.dataset,self.labelset= self.build_dataset()
         self.length = self.dataset.shape[0]
         # self.minmax_normalize()
@@ -43,6 +44,10 @@ class Dataset_ori():
 
         dataset = np.load(self.data_path)
         labelset = np.load(self.label_path)
+
+        if self.selected_class is not None:
+            dataset = dataset[labelset == self.selected_class]
+            labelset = labelset[labelset == self.selected_class]
 
         # dataset,labelset = shuffle(dataset,labelset)
         dataset = torch.from_numpy(dataset)
