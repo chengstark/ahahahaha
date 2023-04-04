@@ -1,5 +1,5 @@
 JOB START
-Mon Mar  6 15:58:07 2023       
+Tue Apr  4 11:43:38 2023       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
 |-------------------------------+----------------------+----------------------+
@@ -7,8 +7,12 @@ Mon Mar  6 15:58:07 2023
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |                               |                      |               MIG M. |
 |===============================+======================+======================|
-|   0  NVIDIA GeForce ...  Off  | 00000000:5E:00.0 Off |                  N/A |
-| 37%   30C    P0    48W / 250W |      0MiB / 11019MiB |      0%      Default |
+|   0  NVIDIA GeForce ...  Off  | 00000000:3B:00.0 Off |                  N/A |
+| 32%   31C    P0    57W / 250W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce ...  Off  | 00000000:5E:00.0 Off |                  N/A |
+| 38%   33C    P0    53W / 250W |      0MiB / 11019MiB |      0%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
                                                                                
@@ -19,9 +23,12 @@ Mon Mar  6 15:58:07 2023
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
-Traceback (most recent call last):
-  File "main.py", line 2, in <module>
-    from dataset import Dataset_ori
-  File "/home/users/zg78/adver_ml/baseline/dataset.py", line 9, in <module>
-    import psutil
-ModuleNotFoundError: No module named 'psutil'
+BATCH_SIZE 1280
+NUM_EPOCHS 30
+device cuda
+PPG_LR 0.0001
+subset 0
+COMMENT 
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_1_
+Creating datasets
+slurmstepd: error: *** JOB 2987185 ON linux56 CANCELLED AT 2023-04-04T11:44:02 ***

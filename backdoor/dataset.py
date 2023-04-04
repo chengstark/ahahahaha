@@ -81,10 +81,10 @@ class Dataset_backdoor():
             return sig_bd
         
         trigger_func = None
-        if self.trigger_type == 'easy_flat_line_trigger':
+        if self.trigger_type == 1:
             trigger_func = easy_flat_line_trigger
 
-        print('Apply trigger', np.unique(labelset, return_counts=True))
+        print('Apply trigger', np.unique(labelset, return_counts=True), flush=True)
         trigger_class = 1 - self.target_class
         trigger_class_idx = np.where(labelset == trigger_class)[0]
         trigger_sample_idx = trigger_class_idx[np.random.choice(len(trigger_class_idx), int(self.backdoor_perc * len(trigger_class_idx)), replace=False)]
