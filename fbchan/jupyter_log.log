@@ -161,3 +161,18 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [I 16:41:30.847 NotebookApp] Saving file at /defense.ipynb
 [I 16:43:30.833 NotebookApp] Saving file at /defense.ipynb
 [I 16:45:30.853 NotebookApp] Saving file at /defense.ipynb
+[I 16:51:35.279 NotebookApp] Saving file at /defense.ipynb
+[I 16:52:17.522 NotebookApp] Starting buffering for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 16:52:18.571 NotebookApp] Kernel restarted: eaeb06eb-653e-42a2-b315-90822dd1fc84
+[I 16:52:18.643 NotebookApp] Restoring connection for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 16:52:19.422 NotebookApp] Replaying 3 buffered messages
+[I 16:52:50.748 NotebookApp] Kernel interrupted: eaeb06eb-653e-42a2-b315-90822dd1fc84
+[I 16:53:23.650 NotebookApp] Starting buffering for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 16:53:24.498 NotebookApp] Kernel restarted: eaeb06eb-653e-42a2-b315-90822dd1fc84
+[I 16:53:24.586 NotebookApp] Restoring connection for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+[I 16:53:25.593 NotebookApp] Replaying 3 buffered messages
+[I 16:53:35.178 NotebookApp] Saving file at /defense.ipynb
+[I 16:55:35.216 NotebookApp] Saving file at /defense.ipynb
+[I 16:57:35.197 NotebookApp] Saving file at /defense.ipynb
+[I 16:59:35.229 NotebookApp] Saving file at /defense.ipynb
+[I 17:01:35.361 NotebookApp] Saving file at /defense.ipynb
