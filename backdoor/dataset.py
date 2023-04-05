@@ -120,13 +120,13 @@ class Dataset_backdoor():
     
     def apply_trigger(self, dataset, labelset):
         
-        print('Apply trigger', np.unique(labelset, return_counts=True), flush=True)
+        # print('Apply trigger', np.unique(labelset, return_counts=True), flush=True)
         trigger_class = 1 - self.target_class
         trigger_class_idx = np.where(labelset == trigger_class)[0]
         trigger_sample_idx = trigger_class_idx[np.random.choice(len(trigger_class_idx), int(self.backdoor_perc * len(trigger_class_idx)), replace=False)]
         dataset_bd = dataset.copy()
         labelset_bd = labelset.copy()
-        for idx in tqdm(trigger_sample_idx):
+        for idx in trigger_sample_idx:
             dataset_bd[idx] = add_trigger(dataset_bd[idx], difficulty=self.trigger_difficulty)
             if self.bd_labelset:
                 labelset_bd[idx] = self.target_class

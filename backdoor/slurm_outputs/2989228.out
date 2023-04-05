@@ -1,67 +1,0 @@
-JOB START
-Wed Apr  5 11:11:04 2023       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 470.74       Driver Version: 470.74       CUDA Version: 11.4     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  NVIDIA RTX A5000    Off  | 00000000:81:00.0 Off |                  Off |
-| 30%   28C    P0    54W / 230W |      0MiB / 24256MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-BATCH_SIZE 1280
-NUM_EPOCHS 30
-device cuda
-PPG_LR 0.0001
-BD_PERC 0.01
-BD_TARGET_CLASS 0
-BD_DIFF 2
-COMMENT diff2
-MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.01_0_2_diff2
-Creating datasets
-Apply trigger (array([0., 1.]), array([530871, 300855]))
-  0%|          | 0/3008 [00:00<?, ?it/s]  3%|▎         | 96/3008 [00:00<00:03, 955.40it/s]  6%|▋         | 192/3008 [00:00<00:02, 957.48it/s] 10%|▉         | 289/3008 [00:00<00:02, 962.49it/s] 13%|█▎        | 386/3008 [00:00<00:02, 964.13it/s] 16%|█▌        | 483/3008 [00:00<00:02, 965.95it/s] 19%|█▉        | 580/3008 [00:00<00:02, 965.37it/s] 23%|██▎       | 677/3008 [00:00<00:02, 960.15it/s] 26%|██▌       | 774/3008 [00:00<00:02, 961.32it/s] 29%|██▉       | 871/3008 [00:00<00:02, 963.67it/s] 32%|███▏      | 968/3008 [00:01<00:02, 964.12it/s] 35%|███▌      | 1065/3008 [00:01<00:02, 954.85it/s] 39%|███▊      | 1161/3008 [00:01<00:01, 955.97it/s] 42%|████▏     | 1258/3008 [00:01<00:01, 957.28it/s] 45%|████▌     | 1355/3008 [00:01<00:01, 960.56it/s] 48%|████▊     | 1452/3008 [00:01<00:01, 961.93it/s] 51%|█████▏    | 1549/3008 [00:01<00:01, 963.37it/s] 55%|█████▍    | 1647/3008 [00:01<00:01, 966.20it/s] 58%|█████▊    | 1744/3008 [00:01<00:01, 965.54it/s] 61%|██████    | 1841/3008 [00:01<00:01, 965.15it/s] 64%|██████▍   | 1938/3008 [00:02<00:01, 962.26it/s] 68%|██████▊   | 2035/3008 [00:02<00:01, 956.19it/s] 71%|███████   | 2131/3008 [00:02<00:00, 955.53it/s] 74%|███████▍  | 2228/3008 [00:02<00:00, 957.57it/s] 77%|███████▋  | 2324/3008 [00:02<00:00, 957.15it/s] 80%|████████  | 2421/3008 [00:02<00:00, 958.59it/s] 84%|████████▎ | 2517/3008 [00:02<00:00, 958.37it/s] 87%|████████▋ | 2614/3008 [00:02<00:00, 959.90it/s] 90%|█████████ | 2710/3008 [00:02<00:00, 958.12it/s] 93%|█████████▎| 2806/3008 [00:02<00:00, 958.37it/s] 96%|█████████▋| 2902/3008 [00:03<00:00, 956.00it/s]100%|█████████▉| 2998/3008 [00:03<00:00, 953.55it/s]100%|██████████| 3008/3008 [00:03<00:00, 959.43it/s]dataset finished
-Apply trigger (array([0., 1.], dtype=float32), array([175726,  13916]))
-
-  0%|          | 0/139 [00:00<?, ?it/s] 67%|██████▋   | 93/139 [00:00<00:00, 922.52it/s]100%|██████████| 139/139 [00:00<00:00, 915.99it/s]dataset finished
-Dataset finished
-Epoch 0 training...
-
-/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/cuda/__init__.py:143: UserWarning: 
-NVIDIA RTX A5000 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
-The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 compute_37.
-If you want to use the NVIDIA RTX A5000 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
-
-  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
-Traceback (most recent call last):
-  File "main.py", line 203, in <module>
-    train(NUM_EPOCHS, PPG_model, ce_loss_fn, PPG_optimizer, train_loader, val_loader, lambda_=None)
-  File "main.py", line 170, in train
-    train_loss = train_epoch(epoch_idx, PPG_model, ce_loss_fn, PPG_optimizer, train_loader, lambda_)
-  File "main.py", line 81, in train_epoch
-    PPG_feature, PPG_out = PPG_model(PPG)
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 166, in forward
-    return self.module(*inputs[0], **kwargs[0])
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/users/zg78/adver_ml/backdoor/resnet1d.py", line 78, in forward
-    out = self.bn0(out)
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/modules/batchnorm.py", line 179, in forward
-    self.eps,
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/site-packages/torch/nn/functional.py", line 2283, in batch_norm
-    input, weight, bias, running_mean, running_var, training, momentum, eps, torch.backends.cudnn.enabled
-RuntimeError: cuDNN error: CUDNN_STATUS_EXECUTION_FAILED
