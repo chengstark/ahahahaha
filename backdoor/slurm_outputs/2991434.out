@@ -1,0 +1,38 @@
+JOB START
+Thu Apr  6 12:01:58 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:3B:00.0 Off |                  N/A |
+| 37%   32C    P0    58W / 250W |      0MiB / 11019MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+BATCH_SIZE 1280
+NUM_EPOCHS 30
+device cuda
+PPG_LR 0.0001
+BD_PERC 0.05
+BD_TARGET_CLASS 1
+BD_DIFF 2
+COMMENT diff2
+MODEL_FOLDER res34_epoch_30_ppglr_0.0001_BDPERC_0.05_1_2_diff2
+Creating datasets
+dataset finished
+dataset finished
+Dataset finished
+Epoch 0 training...
+	[TRAIN] Epoch 0 Batch 0/650 Loss: 0.7351155281066895, 	PPG F1: 0.3182751540041068, 	Batch Avg-T: 0:00:00.795466
+	[TRAIN] Epoch 0 Batch 100/650 Loss: 0.39229731660078065, 	PPG F1: 0.7527408823126842, 	Batch Avg-T: 0:00:00.206219
+	[TRAIN] Epoch 0 Batch 200/650 Loss: 0.3051183720429738, 	PPG F1: 0.8159565917771798, 	Batch Avg-T: 0:00:00.204016

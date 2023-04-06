@@ -31,10 +31,10 @@ NUM_EPOCHS = 30
 device = 'cuda'
 PPG_LR = 1e-4
 subset = 0
-BD_PERC = 0.1
+BD_PERC = 0.05
 BD_TARGET_CLASS = 1
-BD_DIFF = 0
-COMMENT = 'diff0'
+BD_DIFF = 2
+COMMENT = 'diff2'
 MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_BDPERC_{BD_PERC}_{BD_TARGET_CLASS}_{BD_DIFF}_{COMMENT}'
 os.mkdir(f'saved_models/'+MODEL_FOLDER)
 
