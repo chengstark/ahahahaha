@@ -37,3 +37,43 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [W 12:06:07.435 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
 [I 12:08:07.184 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
 [W 12:08:07.185 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:38.379 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:38.379 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:38.992 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:38.993 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:39.164 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:39.165 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:39.349 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:39.349 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:39.603 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:39.604 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:39.888 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 13:27:39.889 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 13:27:40.492 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:2a246dddd2c34ffb93b44724c8ff63ff
+[I 17:17:29.097 NotebookApp] 302 GET / (152.3.140.46) 0.890000ms
+[I 17:17:39.774 NotebookApp] Kernel started: 04a9e947-15c0-41e7-9af3-c2e19a842ed7, name: python3
+[I 17:19:39.957 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
+[I 17:21:40.155 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
+[W 17:22:37.993 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 17:23:40.128 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
+[I 17:24:38.983 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 17:24:38.984 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 17:27:40.248 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
+[I 17:29:40.102 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
+[W 17:44:16.478 NotebookApp] Notebook baseline/test_pipeline.ipynb is not trusted
+[I 17:44:16.644 NotebookApp] Kernel started: 7cc26380-4fed-448e-bf95-f462ce068794, name: python3
+[I 17:46:16.946 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
+[I 17:46:38.439 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 17:46:38.440 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 17:48:16.670 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
+[I 17:48:38.973 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 17:48:38.974 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 17:49:08.913 NotebookApp] Starting buffering for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
+[I 17:49:09.761 NotebookApp] Kernel restarted: 7cc26380-4fed-448e-bf95-f462ce068794
+[I 17:49:09.851 NotebookApp] Restoring connection for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
+[I 17:49:10.524 NotebookApp] Replaying 3 buffered messages
+[I 17:50:16.678 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
+[I 17:51:18.371 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
+[I 17:51:18.636 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
+[I 17:51:18.798 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
+[I 17:52:16.935 NotebookApp] Saving file at /baseline/test_pipeline.ipynb

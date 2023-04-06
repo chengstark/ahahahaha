@@ -12,7 +12,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9945
 [TEST] 	PPG PR  AUC: 0.9763
 dataset finished
-ASR: 0.006693440428380187
+ASR: 0.7801809755020966
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_0_diff0/PPG_best_0.pt
 Target class 0, backdoor percentage 0.05
@@ -28,7 +28,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9937
 [TEST] 	PPG PR  AUC: 0.9717
 dataset finished
-ASR: 0.0013386880856760374
+ASR: 0.9949238578680203
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_0_diff0/PPG_best_1.pt
 Target class 0, backdoor percentage 0.1
@@ -44,7 +44,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9939
 [TEST] 	PPG PR  AUC: 0.9708
 dataset finished
-ASR: 0.0013386880856760374
+ASR: 0.9973515780180976
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.01_0_1_diff1/PPG_best_21.pt
 Target class 0, backdoor percentage 0.01
@@ -60,7 +60,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9882
 [TEST] 	PPG PR  AUC: 0.9455
 dataset finished
-ASR: 1.0
+ASR: 0.9896270139042154
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_1_diff1/PPG_best_3.pt
 Target class 0, backdoor percentage 0.05
@@ -76,7 +76,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9951
 [TEST] 	PPG PR  AUC: 0.9777
 dataset finished
-ASR: 1.0
+ASR: 0.9953652615316707
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_1_diff1/PPG_best_3.pt
 Target class 0, backdoor percentage 0.1
@@ -92,7 +92,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9897
 [TEST] 	PPG PR  AUC: 0.9522
 dataset finished
-ASR: 1.0
+ASR: 0.9997792981681748
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.01_0_2_diff2/PPG_best_0.pt
 Target class 0, backdoor percentage 0.01
@@ -108,7 +108,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9927
 [TEST] 	PPG PR  AUC: 0.9658
 dataset finished
-ASR: 0.0013386880856760374
+ASR: 0.9682189362171706
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_2_diff2/PPG_best_3.pt
 Target class 0, backdoor percentage 0.05
@@ -124,7 +124,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9964
 [TEST] 	PPG PR  AUC: 0.9812
 dataset finished
-ASR: 1.0
+ASR: 0.9995585963363496
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_2_diff2/PPG_best_0.pt
 Target class 0, backdoor percentage 0.1
@@ -140,7 +140,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9936
 [TEST] 	PPG PR  AUC: 0.971
 dataset finished
-ASR: 1.0
+ASR: 0.9997792981681748
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.01_0_3_diff3/PPG_best_4.pt
 Target class 0, backdoor percentage 0.01
@@ -156,7 +156,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9907
 [TEST] 	PPG PR  AUC: 0.9598
 dataset finished
-ASR: 1.0
+ASR: 0.5480026484219819
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_0_3_diff3/PPG_best_3.pt
 Target class 0, backdoor percentage 0.05
@@ -164,7 +164,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9908
 [TEST] 	PPG PR  AUC: 0.9558
 dataset finished
-ASR: 0.9370816599732262
+ASR: 0.9451137884872824
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.05_1_3_diff3/PPG_best_0.pt
 Target class 1, backdoor percentage 0.05
@@ -172,7 +172,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9908
 [TEST] 	PPG PR  AUC: 0.9598
 dataset finished
-ASR: 0.0013386880856760374
+ASR: 0.8737585521959832
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_0_3_diff3/PPG_best_3.pt
 Target class 0, backdoor percentage 0.1
@@ -180,7 +180,7 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9855
 [TEST] 	PPG PR  AUC: 0.9315
 dataset finished
-ASR: 0.9625167336010709
+ASR: 0.9705488621151271
 
 saved_models/res34_epoch_30_ppglr_0.0001_BDPERC_0.1_1_3_diff3/PPG_best_0.pt
 Target class 1, backdoor percentage 0.1
@@ -188,4 +188,4 @@ Clean performance:
 [TEST] 	PPG ROC AUC: 0.9911
 [TEST] 	PPG PR  AUC: 0.9599
 dataset finished
-ASR: 1.0
+ASR: 0.9258441845067314

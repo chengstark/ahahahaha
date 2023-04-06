@@ -12,13 +12,13 @@ from heartpy.peakdetection import detect_peaks
 from tqdm.auto import tqdm
 import scipy
 
-
+SEED = 1
 '''PREFLIGHT SETUP'''
 from functools import partial
 print_flush = partial(print, flush=True)
-torch.manual_seed(1)
-random.seed(1)
-np.random.seed(1)
+torch.manual_seed(SEED)
+random.seed(SEED)
+np.random.seed(SEED)
 '''PREFLIGHT SETUP'''
 
 

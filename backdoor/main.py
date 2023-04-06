@@ -15,13 +15,13 @@ import random
 from sklearn.metrics import f1_score, accuracy_score, roc_auc_score, precision_recall_curve, auc
 import sys
 
-
+SEED=1
 '''PREFLIGHT SETUP'''
 from functools import partial
 print_flush = partial(print, flush=True)
-torch.manual_seed(1)
-random.seed(1)
-np.random.seed(1)
+torch.manual_seed(SEED)
+random.seed(SEED)
+np.random.seed(SEED)
 '''PREFLIGHT SETUP'''
 
 
@@ -33,8 +33,8 @@ PPG_LR = 1e-4
 subset = 0
 BD_PERC = 0.05
 BD_TARGET_CLASS = 1
-BD_DIFF = 2
-COMMENT = 'diff2'
+BD_DIFF = 3
+COMMENT = 'diff3_seed2'
 MODEL_FOLDER = f'res34_epoch_{NUM_EPOCHS}_ppglr_{PPG_LR}_BDPERC_{BD_PERC}_{BD_TARGET_CLASS}_{BD_DIFF}_{COMMENT}'
 os.mkdir(f'saved_models/'+MODEL_FOLDER)
 
