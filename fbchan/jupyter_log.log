@@ -176,3 +176,7 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [I 16:57:35.197 NotebookApp] Saving file at /defense.ipynb
 [I 16:59:35.229 NotebookApp] Saving file at /defense.ipynb
 [I 17:01:35.361 NotebookApp] Saving file at /defense.ipynb
+[I 17:03:37.427 NotebookApp] Saving file at /defense.ipynb
+[W 17:10:24.586 NotebookApp] WebSocket ping timeout after 119911 ms.
+[I 17:10:29.591 NotebookApp] Starting buffering for eaeb06eb-653e-42a2-b315-90822dd1fc84:9b4ed6c9bdb6431597e05e7a8c151db0
+slurmstepd: error: *** JOB 2987202 ON linux57 CANCELLED AT 2023-04-07T12:08:14 DUE TO TIME LIMIT ***
