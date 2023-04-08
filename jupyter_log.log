@@ -82,3 +82,7 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [I 17:58:34.264 NotebookApp] Starting buffering for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
 [I 17:58:34.270 NotebookApp] Starting buffering for 04a9e947-15c0-41e7-9af3-c2e19a842ed7:b62ea71c42db457d80cd6012139ed49d
 [I 17:58:34.329 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:cd4dd04e1e56437a85da1ef656933a53
+[W 17:59:26.315 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 18:01:26.966 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
+[W 18:01:26.967 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+[I 21:30:17.622 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:ca41997916a041d489d409f31326a34b
