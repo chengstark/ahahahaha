@@ -1,13 +1,14 @@
-[I 11:59:32.878 NotebookApp] Serving notebooks from local directory: /home/users/zg78/adver_ml
-[I 11:59:32.878 NotebookApp] Jupyter Notebook 6.4.3 is running at:
-[I 11:59:32.878 NotebookApp] http://linux45:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-[I 11:59:32.878 NotebookApp]  or http://127.0.0.1:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-[I 11:59:32.878 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 11:59:32.888 NotebookApp] 
+[I 17:13:10.813 NotebookApp] Serving notebooks from local directory: /home/users/bc272/ahahahaha
+[I 17:13:10.814 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:13:10.814 NotebookApp] http://gpu-compute2:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+[I 17:13:10.814 NotebookApp]  or http://127.0.0.1:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+[I 17:13:10.814 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:13:10.821 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/users/zg78/.local/share/jupyter/runtime/nbserver-30664-open.html
+        file:///home/users/bc272/.local/share/jupyter/runtime/nbserver-11967-open.html
     Or copy and paste one of these URLs:
+<<<<<<< HEAD
         http://linux45:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
      or http://127.0.0.1:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
 [I 11:59:53.495 NotebookApp] 302 GET / (152.3.140.46) 0.980000ms
@@ -123,3 +124,8 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [I 16:33:34.569 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
 [W 16:33:34.570 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
 slurmstepd: error: *** JOB 2991433 ON linux45 CANCELLED AT 2023-04-09T11:59:48 DUE TO TIME LIMIT ***
+=======
+        http://gpu-compute2:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+     or http://127.0.0.1:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+slurmstepd: error: *** JOB 2995072 ON gpu-compute2 CANCELLED AT 2023-04-10T17:17:03 ***
+>>>>>>> dc81a4bbeaa08fd3d98f5b061d9bf266a1e9be33
