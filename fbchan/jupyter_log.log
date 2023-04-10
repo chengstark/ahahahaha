@@ -1,126 +1,45 @@
-[I 19:02:58.959 NotebookApp] Serving notebooks from local directory: /home/users/bc272/ahahahaha/fbchan
-[I 19:02:58.960 NotebookApp] Jupyter Notebook 6.4.3 is running at:
-[I 19:02:58.960 NotebookApp] http://linux49:8882/?token=3e7caf63ed7fa6ec0a56bdb77bd7af116d6f37598c0606b3
-[I 19:02:58.960 NotebookApp]  or http://127.0.0.1:8882/?token=3e7caf63ed7fa6ec0a56bdb77bd7af116d6f37598c0606b3
-[I 19:02:58.960 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 19:02:58.968 NotebookApp] 
+[I 17:17:31.537 NotebookApp] Serving notebooks from local directory: /home/users/bc272/ahahahaha/fbchan
+[I 17:17:31.538 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:17:31.538 NotebookApp] http://gpu-compute3:8882/?token=d07afc29d128cd9d131f15878d95f1ce5fc52a1fe4736326
+[I 17:17:31.538 NotebookApp]  or http://127.0.0.1:8882/?token=d07afc29d128cd9d131f15878d95f1ce5fc52a1fe4736326
+[I 17:17:31.538 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:17:31.547 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/users/bc272/.local/share/jupyter/runtime/nbserver-1040-open.html
+        file:///home/users/bc272/.local/share/jupyter/runtime/nbserver-16003-open.html
     Or copy and paste one of these URLs:
-        http://linux49:8882/?token=3e7caf63ed7fa6ec0a56bdb77bd7af116d6f37598c0606b3
-     or http://127.0.0.1:8882/?token=3e7caf63ed7fa6ec0a56bdb77bd7af116d6f37598c0606b3
-[I 19:05:23.477 NotebookApp] 302 GET / (152.3.140.46) 1.070000ms
+        http://gpu-compute3:8882/?token=d07afc29d128cd9d131f15878d95f1ce5fc52a1fe4736326
+     or http://127.0.0.1:8882/?token=d07afc29d128cd9d131f15878d95f1ce5fc52a1fe4736326
 /home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
   return _iterencode(o, 0)
-[W 19:05:28.892 NotebookApp] Notebook defense.ipynb is not trusted
-/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
-  return _iterencode(o, 0)
-[I 19:05:29.342 NotebookApp] Kernel started: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f, name: python3
-ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7f0d899c3908>()
-handle: <Handle <TaskStepMethWrapper object at 0x7f0d899c3908>()>
+[I 17:19:24.732 NotebookApp] Kernel started: d6897198-4ca2-433f-b270-215887add16f, name: python3
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7f502ccae588>()
+handle: <Handle <TaskStepMethWrapper object at 0x7f502ccae588>()>
 Traceback (most recent call last):
   File "/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/asyncio/events.py", line 145, in _run
     self._callback(*self._args)
 KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
-[I 19:09:29.435 NotebookApp] Saving file at /defense.ipynb
-[I 19:09:37.207 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:09:37.563 NotebookApp] Kernel restarted: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f
-[I 19:09:37.665 NotebookApp] Restoring connection for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:09:39.178 NotebookApp] Replaying 3 buffered messages
-[I 19:10:11.596 NotebookApp] Kernel interrupted: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f
-[I 19:10:16.263 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:10:19.382 NotebookApp] Kernel restarted: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f
-[I 19:10:19.909 NotebookApp] Restoring connection for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:11:29.425 NotebookApp] Saving file at /defense.ipynb
-[I 19:13:29.491 NotebookApp] Saving file at /defense.ipynb
-[I 19:16:27.272 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:16:28.424 NotebookApp] Kernel restarted: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f
-[I 19:16:28.703 NotebookApp] Restoring connection for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:16:29.356 NotebookApp] Replaying 3 buffered messages
-[I 19:17:29.386 NotebookApp] Saving file at /defense.ipynb
-[I 19:19:29.427 NotebookApp] Saving file at /defense.ipynb
-[I 19:21:29.393 NotebookApp] Saving file at /defense.ipynb
-[I 19:23:29.396 NotebookApp] Saving file at /defense.ipynb
-[I 19:25:29.458 NotebookApp] Saving file at /defense.ipynb
-[I 19:27:29.396 NotebookApp] Saving file at /defense.ipynb
-[I 19:29:29.376 NotebookApp] Saving file at /defense.ipynb
-[I 19:31:29.789 NotebookApp] Saving file at /defense.ipynb
-[I 19:33:29.602 NotebookApp] Saving file at /defense.ipynb
-[I 19:35:29.630 NotebookApp] Saving file at /defense.ipynb
-[I 19:37:29.603 NotebookApp] Saving file at /defense.ipynb
-[I 19:39:29.569 NotebookApp] Saving file at /defense.ipynb
-[I 19:41:29.598 NotebookApp] Saving file at /defense.ipynb
-[I 19:44:29.351 NotebookApp] Saving file at /defense.ipynb
-[I 19:46:29.000 NotebookApp] Saving file at /defense.ipynb
-[I 19:48:51.656 NotebookApp] Saving file at /defense.ipynb
-[I 19:50:51.564 NotebookApp] Saving file at /defense.ipynb
-[I 19:52:51.665 NotebookApp] Saving file at /defense.ipynb
-[I 19:53:06.936 NotebookApp] Saving file at /defense.ipynb
-[I 19:54:53.672 NotebookApp] Saving file at /defense.ipynb
-[I 19:56:27.649 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:56:44.189 NotebookApp] Discarding 77 buffered messages for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:1a066e38e8f94152836760c63aaf458f
-[I 19:57:58.735 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:94f24b8dc8834b3f960ce6a9344528dc
-[I 19:58:02.060 NotebookApp] Kernel restarted: 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f
-[I 19:58:02.217 NotebookApp] Restoring connection for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:94f24b8dc8834b3f960ce6a9344528dc
-[I 19:58:03.227 NotebookApp] Replaying 12 buffered messages
-[I 19:58:43.603 NotebookApp] Saving file at /defense.ipynb
-[I 20:00:43.722 NotebookApp] Saving file at /defense.ipynb
-[I 20:02:43.708 NotebookApp] Saving file at /defense.ipynb
-[I 20:04:43.734 NotebookApp] Saving file at /defense.ipynb
-[W 20:08:02.218 NotebookApp] WebSocket ping timeout after 119900 ms.
-[W 20:08:02.755 NotebookApp] zmq message arrived on closed channel
-[W 20:08:02.758 NotebookApp] zmq message arrived on closed channel
-[W 20:08:02.956 NotebookApp] zmq message arrived on closed channel
-[W 20:08:02.958 NotebookApp] zmq message arrived on closed channel
-[W 20:08:03.304 NotebookApp] zmq message arrived on closed channel
-[W 20:08:03.305 NotebookApp] zmq message arrived on closed channel
-[W 20:08:03.476 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.217 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.220 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.418 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.420 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.766 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.767 NotebookApp] zmq message arrived on closed channel
-[W 20:08:04.916 NotebookApp] zmq message arrived on closed channel
-[W 20:08:05.680 NotebookApp] zmq message arrived on closed channel
-[W 20:08:05.683 NotebookApp] zmq message arrived on closed channel
-[W 20:08:05.880 NotebookApp] zmq message arrived on closed channel
-[W 20:08:05.883 NotebookApp] zmq message arrived on closed channel
-[W 20:08:06.228 NotebookApp] zmq message arrived on closed channel
-[W 20:08:06.229 NotebookApp] zmq message arrived on closed channel
-[W 20:08:06.379 NotebookApp] zmq message arrived on closed channel
-[W 20:08:07.142 NotebookApp] zmq message arrived on closed channel
-[W 20:08:07.145 NotebookApp] zmq message arrived on closed channel
-[I 20:08:07.220 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:94f24b8dc8834b3f960ce6a9344528dc
-[I 20:08:20.592 NotebookApp] Restoring connection for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:94f24b8dc8834b3f960ce6a9344528dc
-[I 20:08:20.593 NotebookApp] Replaying 63 buffered messages
-[I 20:08:44.342 NotebookApp] Saving file at /defense.ipynb
-[I 20:10:44.613 NotebookApp] Saving file at /defense.ipynb
-[I 20:12:45.573 NotebookApp] Saving file at /defense.ipynb
-[I 20:14:46.490 NotebookApp] Saving file at /defense.ipynb
-[W 20:16:20.593 NotebookApp] WebSocket ping timeout after 119961 ms.
-[W 20:16:21.106 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.107 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.307 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.311 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.654 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.655 NotebookApp] zmq message arrived on closed channel
-[W 20:16:21.806 NotebookApp] zmq message arrived on closed channel
-[W 20:16:22.569 NotebookApp] zmq message arrived on closed channel
-[W 20:16:22.572 NotebookApp] zmq message arrived on closed channel
-[W 20:16:22.770 NotebookApp] zmq message arrived on closed channel
-[W 20:16:22.775 NotebookApp] zmq message arrived on closed channel
-[W 20:16:23.116 NotebookApp] zmq message arrived on closed channel
-[W 20:16:23.118 NotebookApp] zmq message arrived on closed channel
-[W 20:16:23.284 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.042 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.045 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.243 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.249 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.590 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.592 NotebookApp] zmq message arrived on closed channel
-[W 20:16:24.742 NotebookApp] zmq message arrived on closed channel
-[W 20:16:25.505 NotebookApp] zmq message arrived on closed channel
-[W 20:16:25.508 NotebookApp] zmq message arrived on closed channel
-[I 20:16:25.597 NotebookApp] Starting buffering for 98b60ed1-2d25-4e45-9093-b0bfdb7ac59f:94f24b8dc8834b3f960ce6a9344528dc
+/home/users/bc272/anaconda3/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 17:20:26.458 NotebookApp] Starting buffering for d6897198-4ca2-433f-b270-215887add16f:f30beaac18944f758fddf09f3fc2daf7
+[I 17:20:26.910 NotebookApp] Kernel restarted: d6897198-4ca2-433f-b270-215887add16f
+[I 17:20:27.007 NotebookApp] Restoring connection for d6897198-4ca2-433f-b270-215887add16f:f30beaac18944f758fddf09f3fc2daf7
+[I 17:20:28.000 NotebookApp] Replaying 3 buffered messages
+[I 17:21:24.748 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:23:24.670 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:25:24.712 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:27:24.634 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:28:39.207 NotebookApp] Kernel started: b56e28d3-0364-4829-ac3b-307276b13c82, name: python3
+[I 17:29:24.634 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:31:33.433 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:32:33.770 NotebookApp] Starting buffering for b56e28d3-0364-4829-ac3b-307276b13c82:315017f8777e429cbf291fad3e46168a
+[I 17:33:35.788 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:35:35.781 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:37:35.812 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:39:35.758 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:41:19.587 NotebookApp] Starting buffering for d6897198-4ca2-433f-b270-215887add16f:f30beaac18944f758fddf09f3fc2daf7
+[I 17:41:20.237 NotebookApp] Kernel restarted: d6897198-4ca2-433f-b270-215887add16f
+[I 17:41:20.400 NotebookApp] Restoring connection for d6897198-4ca2-433f-b270-215887add16f:f30beaac18944f758fddf09f3fc2daf7
+[I 17:41:21.383 NotebookApp] Replaying 3 buffered messages
+[I 17:41:35.778 NotebookApp] Saving file at /trigger_test.ipynb
+[I 17:43:35.763 NotebookApp] Saving file at /trigger_test.ipynb

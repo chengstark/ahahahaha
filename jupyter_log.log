@@ -1,124 +1,13 @@
-[I 11:59:32.878 NotebookApp] Serving notebooks from local directory: /home/users/zg78/adver_ml
-[I 11:59:32.878 NotebookApp] Jupyter Notebook 6.4.3 is running at:
-[I 11:59:32.878 NotebookApp] http://linux45:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-[I 11:59:32.878 NotebookApp]  or http://127.0.0.1:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-[I 11:59:32.878 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 11:59:32.888 NotebookApp] 
+[I 17:13:10.813 NotebookApp] Serving notebooks from local directory: /home/users/bc272/ahahahaha
+[I 17:13:10.814 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:13:10.814 NotebookApp] http://gpu-compute2:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+[I 17:13:10.814 NotebookApp]  or http://127.0.0.1:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+[I 17:13:10.814 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:13:10.821 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/users/zg78/.local/share/jupyter/runtime/nbserver-30664-open.html
+        file:///home/users/bc272/.local/share/jupyter/runtime/nbserver-11967-open.html
     Or copy and paste one of these URLs:
-        http://linux45:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-     or http://127.0.0.1:8881/?token=ca2cce5a005b010643f1540b43b44cdbf0ba0bbd9eac5749
-[I 11:59:53.495 NotebookApp] 302 GET / (152.3.140.46) 0.980000ms
-[I 11:59:53.544 NotebookApp] 302 GET /tree? (152.3.140.46) 1.310000ms
-[I 12:00:02.495 NotebookApp] 302 POST /login?next=%2Ftree%3F (152.3.140.46) 2.310000ms
-/home/users/zg78/_conda/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
-  return _iterencode(o, 0)
-[W 12:00:06.926 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:00:07.160 NotebookApp] Kernel started: a76092a2-265e-436a-aed7-29f1efaa72a2, name: python3
-ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fb3889cb320>()
-handle: <Handle <TaskStepMethWrapper object at 0x7fb3889cb320>()>
-Traceback (most recent call last):
-  File "/home/users/zg78/_conda/envs/base_torch/lib/python3.6/asyncio/events.py", line 145, in _run
-    self._callback(*self._args)
-KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
-/home/users/zg78/_conda/envs/base_torch/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
-  return _iterencode(o, 0)
-[I 12:02:07.191 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:02:07.192 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:04:07.998 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:04:07.999 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:05:34.983 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:05:34.990 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:05:35.192 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:05:35.193 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:06:07.435 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:06:07.435 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 12:08:07.184 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 12:08:07.185 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:38.379 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:38.379 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:38.992 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:38.993 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:39.164 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:39.165 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:39.349 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:39.349 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:39.603 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:39.604 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:39.888 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 13:27:39.889 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 13:27:40.492 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:2a246dddd2c34ffb93b44724c8ff63ff
-[I 17:17:29.097 NotebookApp] 302 GET / (152.3.140.46) 0.890000ms
-[I 17:17:39.774 NotebookApp] Kernel started: 04a9e947-15c0-41e7-9af3-c2e19a842ed7, name: python3
-[I 17:19:39.957 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
-[I 17:21:40.155 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
-[W 17:22:37.993 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 17:23:40.128 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
-[I 17:24:38.983 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 17:24:38.984 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 17:27:40.248 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
-[I 17:29:40.102 NotebookApp] Saving file at /backdoor/trigger_test.ipynb
-[W 17:44:16.478 NotebookApp] Notebook baseline/test_pipeline.ipynb is not trusted
-[I 17:44:16.644 NotebookApp] Kernel started: 7cc26380-4fed-448e-bf95-f462ce068794, name: python3
-[I 17:46:16.946 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:46:38.439 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 17:46:38.440 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 17:48:16.670 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:48:38.973 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 17:48:38.974 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 17:49:08.913 NotebookApp] Starting buffering for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
-[I 17:49:09.761 NotebookApp] Kernel restarted: 7cc26380-4fed-448e-bf95-f462ce068794
-[I 17:49:09.851 NotebookApp] Restoring connection for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
-[I 17:49:10.524 NotebookApp] Replaying 3 buffered messages
-[I 17:50:16.678 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:51:18.371 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
-[I 17:51:18.636 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
-[I 17:51:18.798 NotebookApp] Kernel interrupted: 7cc26380-4fed-448e-bf95-f462ce068794
-[I 17:52:16.935 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:58:31.994 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:58:32.265 NotebookApp] Saving file at /baseline/test_pipeline.ipynb
-[I 17:58:34.264 NotebookApp] Starting buffering for 7cc26380-4fed-448e-bf95-f462ce068794:8dc46defecef4f5f835f86f9fcb653d0
-[I 17:58:34.270 NotebookApp] Starting buffering for 04a9e947-15c0-41e7-9af3-c2e19a842ed7:b62ea71c42db457d80cd6012139ed49d
-[I 17:58:34.329 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:cd4dd04e1e56437a85da1ef656933a53
-[W 17:59:26.315 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 18:01:26.966 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 18:01:26.967 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 21:30:17.622 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:ca41997916a041d489d409f31326a34b
-[I 16:03:38.046 NotebookApp] 302 GET / (152.3.140.46) 1.950000ms
-[I 16:08:55.024 NotebookApp] 302 GET / (152.3.140.46) 0.940000ms
-[W 16:09:15.996 NotebookApp] Notebook fbchan/defense.ipynb is not trusted
-[I 16:09:18.031 NotebookApp] Kernel started: 9f90500d-3c27-406d-b3c2-facedbc5e03c, name: python3
-[W 16:14:02.652 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:16:02.995 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:16:02.996 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:18:02.966 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:18:02.967 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:20:03.207 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:20:03.208 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:22:02.962 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:22:02.963 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:23:07.634 NotebookApp] Kernel interrupted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:23:07.771 NotebookApp] Kernel interrupted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:23:43.514 NotebookApp] Kernel interrupted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:23:44.730 NotebookApp] Starting buffering for a76092a2-265e-436a-aed7-29f1efaa72a2:c0ea7dceddd04f3e892fb12b4ea46808
-[I 16:23:45.578 NotebookApp] Kernel restarted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:23:45.718 NotebookApp] Restoring connection for a76092a2-265e-436a-aed7-29f1efaa72a2:c0ea7dceddd04f3e892fb12b4ea46808
-[I 16:23:46.728 NotebookApp] Replaying 3 buffered messages
-[I 16:24:02.950 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:24:02.952 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:24:23.815 NotebookApp] Kernel interrupted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:24:23.980 NotebookApp] Kernel interrupted: a76092a2-265e-436a-aed7-29f1efaa72a2
-[I 16:26:02.951 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:26:03.106 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:28:02.953 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:28:02.953 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:30:02.965 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:30:02.966 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:33:34.225 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:33:34.227 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:33:34.396 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:33:34.396 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
-[I 16:33:34.569 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
-[W 16:33:34.570 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+        http://gpu-compute2:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+     or http://127.0.0.1:8881/?token=c26618f4ad9c3bd29d0bf2d5610ca803f067254907756cea
+slurmstepd: error: *** JOB 2995072 ON gpu-compute2 CANCELLED AT 2023-04-10T17:17:03 ***
