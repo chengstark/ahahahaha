@@ -122,3 +122,4 @@ KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
 [W 16:33:34.396 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
 [I 16:33:34.569 NotebookApp] Saving file at /backdoor/test_pipeline.ipynb
 [W 16:33:34.570 NotebookApp] Notebook backdoor/test_pipeline.ipynb is not trusted
+slurmstepd: error: *** JOB 2991433 ON linux45 CANCELLED AT 2023-04-09T11:59:48 DUE TO TIME LIMIT ***
